@@ -1,0 +1,423 @@
+/*CSS CREADO POR GABRIEL LAGROTTERIA PARA CODERHOUSE EN LA CLASE DESARROLLO WEB*/
+
+
+/*ESTILOS GENERALES DEL SITIO */
+
+* {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "Mantinia";
+    src: url("./fonts/mantiniaRegular.woff2");
+}
+
+header,
+header li,
+header ul,
+h1,
+h2,
+h3,
+header a {
+    font-family: "Mantinia";
+}
+
+h1,
+h2,
+h3 {
+    color: #bf9823;
+}
+
+body {
+    background-color: #000;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+section {
+    position: relative;
+    padding: 60px 0px;
+}
+
+/*HEADER DEL SITIO */
+
+header {
+    height: auto;
+}
+
+header ul {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+
+/*Redes Sociales del Header*/
+
+header ul.seccionRedes {
+    position: absolute;
+    display: flex;
+    right: 60px;
+    top: 40px;
+    width: 150px;
+}
+
+header ul.seccionRedes li.logoRed {
+    flex: auto;
+    font-size: 25px;
+}
+
+/*Logo del Header*/
+
+header ul li.logo {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+header ul li.logo a {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bf9823;
+}
+
+header ul li.logo a img {
+    height: auto;
+    width: 85px;
+}
+
+/* Navbar */
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 5vh;
+    border-top: 1px solid #ffc10736;
+    border-bottom: 1px solid #ffc10736;
+}
+
+header nav ul li,
+header nav ul li a {
+    width: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+    display: flex;
+
+}
+
+header nav ul li a {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-left: 1px solid #ffc10736;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+header nav ul li.active a,
+header nav ul li:hover a,
+header ul.seccionRedes li.logoRed:hover a i {
+    color: #ffc107;
+}
+
+header nav ul li.active a,
+header nav ul li:hover {
+    background-color: #3c3930;
+}
+
+
+/*video debajo del Header*/
+
+.videoSinAudio,
+.videoSinAudio video,
+.videoSinAudio video source {
+    height: auto;
+    width: 100%;
+}
+
+.videoSinAudio {
+    padding: 0px;
+}
+
+/*SECCION DETALLES DEL JUEGO*/
+
+section.detallesJuego {
+    padding: 60px 80px;
+    background: url(../img/eldenRingFondo.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.detallesJuego ul,
+section.plataformaJuego ul {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+section.detallesJuego ul li,
+section.plataformaJuego ul li {
+    margin: 0 10px;
+}
+
+section.detallesJuego ul li span {
+    color: #bf981b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section.detallesJuego iframe {
+    width: 100%;
+    height: 55vh;
+}
+
+section.detallesJuego p {
+    text-align: justify;
+}
+
+
+/*SECCION PLATAFORMA DE JUEGO*/
+
+
+section.plataformaJuego h2 {
+    padding: 2rem 0;
+}
+
+section.plataformaJuego ul li {
+    border: 1px solid #bf9823;
+    border-radius: 8%;
+    PADDING: 0.3REM;
+    background: #074845;
+}
+
+section.plataformaJuego ul li a {
+    padding: 10px;
+    color: #fff;
+}
+
+section.plataformaJuego .card {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/eldenRingFondo.jpg) no-repeat;
+}
+
+section.plataformaJuego .card a {
+    width: 100%;
+    margin: 20px 0px;
+    border: 1px solid #fff;
+    background-color: #bf9823;
+    font-weight: 800;
+}
+
+section.plataformaJuego .card a:active,
+section.plataformaJuego .card a:hover {
+    border: 1px solid #bf9823;
+    color: #bf9823;
+    background-color: transparent;
+}
+
+section.plataformaJuego .card h4 {
+    color: #bf981b;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+/* clase referencia a Bruno Bucciaratti de JOJO*/
+.stickyFingers {
+    top: 900px;
+    right: 40px;
+    float: right;
+    width: auto;
+    position: sticky;
+    display: initial;
+    z-index: 1000000;
+}
+
+.stickyFingers .comprarSticky {
+    text-align: center;
+    color: #FFF;
+    background-color: #bf981b;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+/*Seccion Noticias*/
+
+section.noticias {
+    background: url(../img/eldenLordSaturado.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+}
+
+.fondoNegro {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+    padding: 60px 0px;
+}
+
+section.noticias h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    height: 7vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+
+section.noticias img {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    margin: 30px 0px;
+}
+
+section.noticias a {
+    width: 100%;
+    margin: 20px 0px;
+    border: 1px solid #fff;
+    background-color: #bf9823;
+    font-weight: 800;
+}
+
+section.noticias a:active,
+section.noticias a:hover {
+    border: 1px solid #bf9823;
+    color: #bf9823;
+    background-color: transparent;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0a2324;
+    height: 16vh;
+}
+
+footer img {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+footer p {
+    margin-top: 55px;
+}
+
+/*Clases de Aventurero*/
+
+section.claseAventureros .card {
+    background-color: #bf9823;
+}
+
+section.claseAventureros .card h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+section.claseAventureros .card p {
+    color: #fff;
+    text-align: center;
+}
+
+/*Seccion Estrategias Jefes*/
+
+section.jefes .card-body img {
+    width: 100%;
+}
+
+section.jefes .card {
+    background-color: #000;
+    border-color: #fff;
+}
+
+/*Seccion Estrategias Juegos Similares*/
+
+section.juegosSimilares img{
+    width: 100%;
+}
+section.juegosSimilares h2{
+    margin: 40px 20px;
+    font-size: 1.5rem;
+
+
+}
+
+section.juegosSimilares h3{
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/*Pagina Contacto*/
+
+section.contacto {
+    background: url(../img/imgNoticia2.png) no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
+
+section.contacto .form-group {
+    padding: 10px 0px;
+}
+
+section.contacto .col-6 p {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+section.contacto button {
+    width: 100%;
+    margin: 20px 0px;
+    border: 1px solid #fff;
+    background-color: #bf9823;
+    font-weight: 800;
+}
+
+section.contacto button:hover,
+section.contacto button:active {
+    border: 1px solid #bf9823;
+    color: #bf9823;
+    background-color: transparent;
+}
+
+section.contacto ul {
+    padding: 0px;
+    margin-top: 60px;
+}
+
+section.contacto ul li {
+    float: left;
+    margin: 0px 20px;
+}
+
+section.contacto ul li a {
+    font-size: 4rem;
+}
+
+section.contacto ul li a:hover i {
+    color: #bf9823;
+}
