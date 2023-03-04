@@ -384,7 +384,7 @@ section.contacto .form-group {
     padding: 10px 0px;
 }
 
-section.contacto .col-6 p {
+section.contacto .col-lg-6 p {
     text-align: justify;
     margin: 20px 0px;
 }
