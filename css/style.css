@@ -104,9 +104,7 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 5vh;
-    border-top: 1px solid #ffc10736;
-    border-bottom: 1px solid #ffc10736;
+    height: 5vh;    
 }
 
 header nav ul li,
@@ -140,6 +138,17 @@ header ul.seccionRedes li.logoRed:hover a i {
 header nav ul li.active a,
 header nav ul li:hover {
     background-color: #3c3930;
+}
+
+header .navbar-collapse{
+    height: 100px;
+}
+
+header nav.navbar button{
+    position: absolute;
+    right: 45px;
+    top: -60px;
+    border: 1px solid yellow;
 }
 
 
@@ -429,9 +438,6 @@ section.contacto ul li a:hover i {
 
 @media (min-width: 992px) {
 
-
-
-
 /*Redes Sociales del Header*/
 
 header ul.seccionRedes {
@@ -477,6 +483,7 @@ header nav ul {
     height: 5vh;
     border-top: 1px solid #ffc10736;
     border-bottom: 1px solid #ffc10736;
+    width: 100%;
 }
 
 header nav ul li,
@@ -510,6 +517,11 @@ header ul.seccionRedes li.logoRed:hover a i {
 header nav ul li.active a,
 header nav ul li:hover {
     background-color: #3c3930;
+}
+
+
+header .navbar-collapse{
+    height: auto;
 }
 
 
