@@ -307,7 +307,7 @@ section.plataformaJuego .card h4 {
 
 /* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
 .stickyFingers {
-    top: 900px;
+    top: 857px;
     right: 40px;
     float: right;
     width: auto;
@@ -322,6 +322,10 @@ section.plataformaJuego .card h4 {
     background-color: #bf981b;
     border-radius: 6px;
     padding: 4px;
+}
+
+.stickyFingers .comprarSticky i{
+    font-size: 32px;
 }
 
 /*Seccion Noticias*/
@@ -704,26 +708,6 @@ section.contacto ul li a:hover i {
         font-size: 1.2rem;
         font-weight: 900;
     }
-
-    /* clase referencia a Bruno Bucciaratti de JOJO*/
-    .stickyFingers {
-        top: 900px;
-        right: 40px;
-        float: right;
-        width: auto;
-        position: sticky;
-        display: initial;
-        z-index: 1000000;
-    }
-
-    .stickyFingers .comprarSticky {
-        text-align: center;
-        color: #FFF;
-        background-color: #bf981b;
-        border-radius: 6px;
-        padding: 4px;
-    }
-
     /*Seccion Noticias*/
 
     section.noticias {
@@ -756,7 +740,11 @@ section.contacto ul li a:hover i {
         margin: 30px 0px;
     }
 
-    section.noticias a {
+    section.noticias .col-md-4 p{
+        height: 150px;
+    }
+
+    section.noticias a, section.noticias button {
         width: 100%;
         margin: 20px 0px;
         border: 1px solid #fff;
@@ -765,10 +753,19 @@ section.contacto ul li a:hover i {
     }
 
     section.noticias a:active,
-    section.noticias a:hover {
+    section.noticias a:hover,section.noticias button:active,
+    section.noticias button:hover {
         border: 1px solid #bf9823;
         color: #bf9823;
         background-color: transparent;
+    }
+
+    .modal h5{
+        color: #bf9823;
+    }
+
+    .modal p{
+        color: #000;
     }
 
     /* FOOTER */

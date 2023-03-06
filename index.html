@@ -47,7 +47,7 @@
     </ul>
 
     <!-- Empieza Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
 
   <section class="detallesJuego">
     <div class="row">
-      <div class="col-xs-12 col-lg-12 text-center">
+      <div class="col-xs-12 col-md-12 text-center">
         <h1>ELDEN RING</h1>
         <ul>
           <li><span>Release Date:</span> 25/02/2022</li>
@@ -99,7 +99,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-lg-6 order-2 order-md-1">
+      <div class="col-xs-12 col-md-6 order-2 order-md-1">
         <h2>DESCRIPCION ELDEN RING</h2>
         <p>Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor
           del Círculo en las Tierras Intermedias.</p>
@@ -119,7 +119,7 @@
         <p>Y conviértete en el señor del Círculo.</p>
         </p>
       </div>
-      <div class="col-lg-6 order-1 order-lg-2 order-md-2">
+      <div class="col-md-6 order-1 order-md-2">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -133,13 +133,13 @@
   <!--ELECCION PLATAFORMA DE JUEGO-->
 
   <div class="stickyFingers d-none d-md-flex">
-    <a href="#plataforma" class="comprarSticky">COMPRAR JUEGO</a>
+    <a href="#plataforma" class="comprarSticky"><i class="bi bi-bag"></i></a>
   </div>
 
   <section class="plataformaJuego" id="plataforma">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-md-12">
           <h2 class="text-center">ELIGE TU PLATAFORMA</h2>
           <ul>
             <li><a href="https://store.playstation.com/es-cl/product/UP0700-PPSA04610_00-ELDENRING0000000"
@@ -206,31 +206,122 @@
       <div class="container">
         <div class="row">
           <h2 class="text-center">NOTICIAS</h2>
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <img src="./img/imgNoticia1.png" alt="imagen Noticia parche">
             <h3>PARCHE 1.8</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus commodi placeat ex quas fugiat itaque
-              aspernatur odio ullam, error natus expedita aliquid nesciunt iure accusamus inventore quos delectus quo
-              dolor?</p>
-            <a href="#" class="btn btn-primary">VER MAS</a>
+            <p>FromSoftware acaba de lanzar una nueva actualización, la 1.08, que además de múltiples ajustes jugables,
+              como suele ser habitual, también incluye una gran novedad, el Coliseo.</p>
+            <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">VER
+              MAS</button>
 
           </div>
-          <div class="col-lg-4">
+          <!-- Modal Noticia de Arriba-->
+
+          <div class="modal" tabindex="-1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">PARCHE 1.8</h5>
+                </div>
+                <div class="modal-body">
+                  <p>FromSoftware acaba de lanzar una nueva actualización, la 1.08, que además de múltiples ajustes
+                    jugables, como suele ser habitual, también incluye una gran novedad, el Coliseo.</p>
+                  <p>Tres nuevas arenas</p>
+                  <p>Así tenemos tres nuevas arenas multijugador, situadas en Limgrave, Caelid y Leyndell, y cada una de
+                    ellas cuenta con sus propias reglas. El Coliseo de Limgrave cuenta con dos modos: United Combat y
+                    Combat Ordeal.</p>
+
+                  <p> United Combat: los combatientes se dividirán en dos equipos para luchar en batallas por tiempos con
+                    la posibilidad de reaparecer. Cada muerte y reaparición otorga puntos a los adversarios. De esta
+                    manera se podrá obtener más puntuación.
+                    Combat Ordeal: cada Sin Luz va por su cuenta. Los combatientes en este modo también pueden
+                    reaparecer hasta que el temporizador llegue a cero. El que tenga más puntos prevalecerá como
+                    vencedor.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
             <img src="./img/imgNoticia2.png" alt="imagen Noticia 2 personajes en el Coliseo">
             <h3>¡Ya disponible la Actualización gratuita del Coliseo!</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus commodi placeat ex quas fugiat itaque
-              aspernatur odio ullam, error natus expedita aliquid nesciunt iure accusamus inventore quos delectus quo
-              dolor?</p>
-            <a href="#" class="btn btn-primary">VER MAS</a>
+            <p>PvP COLISEO - Las puertas del Coliseo se abren por primera vez para presentar un nuevo desafío
+              desbloqueando tres nuevas arenas. Situadas en Limgrave, Caelid y Leyndell, cada una de ellas cuenta con
+              sus propias reglas y serán escenarios de feroces enfrentamientos entre jugadores.</p>
+            <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">VER
+              MAS</button>
           </div>
-          <div class="col-lg-4">
+
+          <!-- Modal Noticia de Arriba-->
+
+          <div class="modal" tabindex="-1" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">¡YA DISPONIBLE LA ACTUALIZACIÓN GRATUITA DEL COLISEO!</h5>
+                </div>
+                <div class="modal-body">
+                  <p>PvP COLISEO - Las puertas del Coliseo se abren por primera vez para presentar un nuevo desafío
+                    desbloqueando tres nuevas arenas. Situadas en Limgrave, Caelid y Leyndell, cada una de ellas cuenta
+                    con sus propias reglas y serán escenarios de feroces enfrentamientos entre jugadores.</p>
+
+                  <p>El Coliseo Real, situado en Leyndell, incluye el modo Duelo. Dos Sin Luz se enfrentan en un duelo a
+                    muerte sin posibilidad de reaparecer.</p>
+
+                    <p>El Coliseo de Caelid incluye todos los modos mencionados, con el añadido de poder invocar Cenizas de
+                    espíritus para que luchen junto a los jugadores.</p>
+
+                    <p>Únete a la lucha en solitario o utiliza contraseñas de grupo para enfrentarte a tus amigos y
+                    demostrar tu valía en los Coliseos.</p>
+
+                    <p>Cosméticos Cinco nuevos estilismos para el pelo esperan también a los jugadores que retomen su
+                    aventura en ELDEN RING o se enfrenten a los nuevos desafíos de los Coliseos.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
             <img src="./img/imgNoticia3.png" alt="imagen Noticia Ranni y Tarnished">
             <h3>ELDEN RING alcanza los 12 millones de copias vendidas en todo el mundo</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus commodi placeat ex quas fugiat itaque
-              aspernatur odio ullam, error natus expedita aliquid nesciunt iure accusamus inventore quos delectus quo
-              dolor?
+            <p>Bandai Namco Entertainment Inc. y FromSoftware Inc. se complacen en anunciar que ELDEN RING, el juego de
+              rol y acción que han desarrollado juntos, ha distribuido más de 20 millones de copias en todo el mundo.
             </p>
-            <a href="#" class="btn btn-primary">VER MAS</a>
+            <button href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">VER
+              MAS</button>
+          </div>
+
+          <div class="modal" tabindex="-1" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">ELDEN RING ALCANZA LOS 12 MILLONES DE COPIAS VENDIDAS EN TODO EL MUNDO</h5>
+                </div>
+                <div class="modal-body">
+                  <p>Bandai Namco Entertainment Inc. y FromSoftware Inc. se complacen en anunciar que ELDEN RING, el
+                    juego de rol y acción que han desarrollado juntos, ha distribuido más de 20 millones de copias en
+                    todo el mundo.</p>
+
+                  <p>Desde su lanzamiento, que tuvo lugar el 25 de febrero de 2022, ELDEN RING no ha dejado de generar
+                  teorías y debates a medida que los Sinluz de todo el mundo exploraban las Tierras Intermedias, unían
+                  las piezas de personajes y eventos y revelaban un lore profundo y misterioso.</p>
+
+                  <p>El juego tuvo una cálida acogida por parte de los jugadores y fue aclamado por la crítica, recibiendo
+                  numerosos premios a lo largo del año. Tanto Bandai Namco Entertainment Inc. como FromSoftware Inc. le
+                  están muy agradecidos a todos y cada uno de los jugadores que se adentraron en este mundo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
