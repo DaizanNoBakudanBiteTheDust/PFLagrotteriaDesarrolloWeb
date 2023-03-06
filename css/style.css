@@ -215,16 +215,34 @@ section.detallesJuego p {
 
 /*SECCION PLATAFORMA DE JUEGO*/
 
+section.plataformaJuego {
+    padding: 10px;
+}
+
+    /*El ROW NO SE TOCA PERO EN ESTE CASO ERA NECESARIO */
+section.plataformaJuego .row:first-child{
+    width: 100%;
+}
 
 section.plataformaJuego h2 {
     padding: 2rem 0;
 }
 
+section.plataformaJuego ul {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+}
+
 section.plataformaJuego ul li {
     border: 1px solid #bf9823;
     border-radius: 8%;
-    PADDING: 0.3REM;
+    text-align: center;
+    padding: 0.5rem;
     background: #074845;
+    height: 60px;
 }
 
 section.plataformaJuego ul li a {
@@ -554,6 +572,11 @@ section.contacto ul li a:hover i {
         padding: 60px 80px;
     }
 
+    section.detallesJuego h2 {
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
     section.detallesJuego ul,
     section.plataformaJuego ul {
         display: flex;
@@ -585,6 +608,9 @@ section.contacto ul li a:hover i {
 
     /*SECCION PLATAFORMA DE JUEGO*/
 
+    section.plataformaJuego {
+        padding: 0px 20px 30px;
+    }
 
     section.plataformaJuego h2 {
         padding: 2rem 0;
@@ -593,8 +619,10 @@ section.contacto ul li a:hover i {
     section.plataformaJuego ul li {
         border: 1px solid #bf9823;
         border-radius: 8%;
-        PADDING: 0.3REM;
+        text-align: center;
+        padding: 0.5rem;
         background: #074845;
+        height: auto;
     }
 
     section.plataformaJuego ul li a {
