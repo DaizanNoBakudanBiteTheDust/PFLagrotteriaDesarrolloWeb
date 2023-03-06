@@ -430,13 +430,25 @@ section.jefes .accordion-body img {
 section.jefes .accordion-body {
     background-color: #000;
     border-color: #fff;
+    display: flex;
 }
 
 section.jefes img{
     width: 100%;
 }
 
-/*Seccion Estrategias Juegos Similares*/
+.accordion-item{
+    border:none;
+}
+
+section.jefes button.accordion-button{
+    color: #ffc107;
+    background-color: #3c3930;
+    font-family: "Mantinia";
+    text-transform: uppercase;
+}
+
+/*Juegos Similares*/
 
 section.juegosSimilares img {
     width: 100%;
