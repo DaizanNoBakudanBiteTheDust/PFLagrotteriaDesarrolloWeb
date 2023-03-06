@@ -423,13 +423,17 @@ section.claseAventureros .card p {
 
 /*Seccion Estrategias Jefes*/
 
-section.jefes .card-body img {
+section.jefes .accordion-body img {
     width: 100%;
 }
 
-section.jefes .card {
+section.jefes .accordion-body {
     background-color: #000;
     border-color: #fff;
+}
+
+section.jefes img{
+    width: 100%;
 }
 
 /*Seccion Estrategias Juegos Similares*/
@@ -441,8 +445,6 @@ section.juegosSimilares img {
 section.juegosSimilares h2 {
     margin: 40px 20px;
     font-size: 1.5rem;
-
-
 }
 
 section.juegosSimilares h3 {
