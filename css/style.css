@@ -220,8 +220,8 @@ section.plataformaJuego {
     overflow: hidden;
 }
 
-    /*El ROW NO SE TOCA PERO EN ESTE CASO ERA NECESARIO */
-section.plataformaJuego .row:first-child{
+/*El ROW NO SE TOCA PERO EN ESTE CASO ERA NECESARIO */
+section.plataformaJuego .row:first-child {
     width: 100%;
 }
 
@@ -247,8 +247,10 @@ section.plataformaJuego ul::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 section.plataformaJuego ul {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 section.plataformaJuego ul li {
@@ -267,7 +269,7 @@ section.plataformaJuego ul li a {
     width: 150px;
 }
 
-section.plataformaJuego .scrollPagina{
+section.plataformaJuego .scrollPagina {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
@@ -324,7 +326,7 @@ section.plataformaJuego .card h4 {
     padding: 4px;
 }
 
-.stickyFingers .comprarSticky i{
+.stickyFingers .comprarSticky i {
     font-size: 32px;
 }
 
@@ -352,7 +354,7 @@ section.noticias h3 {
     text-align: center;
 }
 
-section.noticias p{
+section.noticias p {
     text-align: justify;
 }
 
@@ -363,7 +365,8 @@ section.noticias img {
     margin: 30px 0px;
 }
 
-section.noticias a, section.noticias button {
+section.noticias a,
+section.noticias button {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
@@ -372,18 +375,19 @@ section.noticias a, section.noticias button {
 }
 
 section.noticias a:active,
-section.noticias a:hover,section.noticias button:active,
+section.noticias a:hover,
+section.noticias button:active,
 section.noticias button:hover {
     border: 1px solid #bf9823;
     color: #bf9823;
     background-color: transparent;
 }
 
-.modal h5{
+.modal h5 {
     color: #bf9823;
 }
 
-.modal p{
+.modal p {
     color: #000;
 }
 
@@ -431,17 +435,18 @@ section.jefes .accordion-body {
     background-color: #000;
     border-color: #fff;
     display: flex;
+    flex-direction: column-reverse;
 }
 
-section.jefes img{
+section.jefes img {
     width: 100%;
 }
 
-.accordion-item{
-    border:none;
+.accordion-item {
+    border: none;
 }
 
-section.jefes button.accordion-button{
+section.jefes button.accordion-button {
     color: #ffc107;
     background-color: #3c3930;
     font-family: "Mantinia";
@@ -603,25 +608,29 @@ section.contacto ul li a:hover i {
         height: auto;
     }
 
-/* Detalles Juego Index */
+    /* Detalles Juego Index */
 
     section.detallesJuego p {
         text-align: justify;
         margin-bottom: 27px;
         font-size: 0.7rem;
-}
+    }
 
-/* Noticias Index */
+    /* Noticias Index */
 
-section.noticias h3{
-    height: 90px;
-    font-size: 1rem;
-}
+    section.noticias h3 {
+        height: 90px;
+        font-size: 1rem;
+    }
 
-section.noticias .col-md-4 p{
-    height: 180px;
-    font-size: 00.8rem;
-}
+    section.noticias .col-md-4 p {
+        height: 180px;
+        font-size: 00.8rem;
+    }
+
+    section.jefes .accordion-body {
+        flex-direction: row;
+    }
 
 }
 
@@ -781,7 +790,7 @@ section.noticias .col-md-4 p{
     }
 
 
-    section.plataformaJuego ul{
+    section.plataformaJuego ul {
         flex-direction: inherit;
         margin-left: auto;
         overflow: auto;
@@ -802,7 +811,7 @@ section.noticias .col-md-4 p{
         color: #fff;
     }
 
-    section.plataformaJuego .scrollPagina{
+    section.plataformaJuego .scrollPagina {
         display: flex;
         flex-wrap: nowrap;
         overflow: hidden;
@@ -836,6 +845,7 @@ section.noticias .col-md-4 p{
         font-size: 1.2rem;
         font-weight: 900;
     }
+
     /*Seccion Noticias*/
 
     section.noticias {
@@ -868,11 +878,12 @@ section.noticias .col-md-4 p{
         margin: 30px 0px;
     }
 
-    section.noticias .col-md-4 p{
+    section.noticias .col-md-4 p {
         height: 150px;
     }
 
-    section.noticias a, section.noticias button {
+    section.noticias a,
+    section.noticias button {
         width: 100%;
         margin: 20px 0px;
         border: 1px solid #fff;
@@ -881,18 +892,19 @@ section.noticias .col-md-4 p{
     }
 
     section.noticias a:active,
-    section.noticias a:hover,section.noticias button:active,
+    section.noticias a:hover,
+    section.noticias button:active,
     section.noticias button:hover {
         border: 1px solid #bf9823;
         color: #bf9823;
         background-color: transparent;
     }
 
-    .modal h5{
+    .modal h5 {
         color: #bf9823;
     }
 
-    .modal p{
+    .modal p {
         color: #000;
     }
 
@@ -938,6 +950,10 @@ section.noticias .col-md-4 p{
     section.jefes .card {
         background-color: #000;
         border-color: #fff;
+    }
+
+    section.jefes .accordion-body {
+        flex-direction: row;
     }
 
     /*Seccion Estrategias Juegos Similares*/
