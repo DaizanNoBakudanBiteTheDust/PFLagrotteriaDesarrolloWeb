@@ -235,20 +235,35 @@ section.plataformaJuego ul {
     display: flex;
     flex-direction: row;
     margin-left: -10px;
+    overflow: scroll;
+    width: 97vw;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+section.plataformaJuego ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+section.plataformaJuego ul {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 section.plataformaJuego ul li {
     border: 1px solid #bf9823;
-    border-radius: 8%;
+    border-radius: 5%;
     text-align: center;
     padding: 0.5rem;
     background: #074845;
     height: 60px;
+    display: flex;
 }
 
 section.plataformaJuego ul li a {
     padding: 10px;
     color: #fff;
+    width: 150px;
 }
 
 section.plataformaJuego .card {
