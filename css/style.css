@@ -501,13 +501,116 @@ section.contacto ul li a:hover i {
     color: #bf9823;
 }
 
-@media (min-width: 576px) and (max-width: 576px) {
+@media (min-width: 768px) {
+    /*Redes Sociales del Header*/
 
+    header ul.seccionRedes {
+        position: absolute;
+        display: flex;
+        right: 60px;
+        top: 40px;
+        width: 150px;
+    }
+
+    header ul.seccionRedes li.logoRed {
+        flex: auto;
+        font-size: 25px;
+    }
+
+    /*Logo del Header*/
+
+    header ul li.logo {
+        width: 120px;
+        height: auto;
+        padding: 10px;
+        margin-left: 60px;
+    }
+
+    header ul li.logo a {
+        display: block;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #bf9823;
+    }
+
+    header ul li.logo a img {
+        height: auto;
+        width: 85px;
+    }
+
+    /* Navbar */
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 5vh;
+        border-top: 1px solid #ffc10736;
+        border-bottom: 1px solid #ffc10736;
+        width: 100%;
+    }
+
+    header nav ul li,
+    header nav ul li a {
+        width: 100%;
+    }
+
+    header nav ul li {
+        list-style: none;
+        display: flex;
+
+    }
+
+    header nav ul li a {
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        border-left: 1px solid #ffc10736;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        height: auto;
+    }
+
+    header nav ul li.active a,
+    header nav ul li:hover a,
+    header ul.seccionRedes li.logoRed:hover a i {
+        color: #ffc107;
+    }
+
+    header nav ul li.active a,
+    header nav ul li:hover {
+        background-color: #3c3930;
+    }
+
+
+    header .navbar-collapse {
+        height: auto;
+    }
+
+/* Detalles Juego Index */
+
+    section.detallesJuego p {
+        text-align: justify;
+        margin-bottom: 27px;
+        font-size: 0.7rem;
 }
 
-/*Breakpoint mas grande que Celular*/
+/* Noticias Index */
 
-@media (min-width: 576px) {}
+section.noticias h3{
+    height: 90px;
+    font-size: 1rem;
+}
+
+section.noticias .col-md-4 p{
+    height: 180px;
+    font-size: 00.8rem;
+}
+}
+
+}
 
 /*Breakpoint vista de PC*/
 
