@@ -239,6 +239,7 @@ section.plataformaJuego ul {
     width: 97vw;
 }
 
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 section.plataformaJuego ul::-webkit-scrollbar {
     display: none;
@@ -266,11 +267,19 @@ section.plataformaJuego ul li a {
     width: 150px;
 }
 
+section.plataformaJuego .scrollPagina{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+}
+
 section.plataformaJuego .card {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     background: url(../img/eldenRingFondo.jpg) no-repeat;
+    margin-right: 15px;
 }
 
 section.plataformaJuego .card a {
@@ -292,9 +301,11 @@ section.plataformaJuego .card h4 {
     color: #bf981b;
     font-size: 1.2rem;
     font-weight: 900;
+    height: 50px;
+    text-align: center;
 }
 
-/* clase referencia a Bruno Bucciaratti de JOJO*/
+/* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
 .stickyFingers {
     top: 900px;
     right: 40px;
@@ -630,10 +641,19 @@ section.contacto ul li a:hover i {
 
     section.plataformaJuego {
         padding: 0px 20px 30px;
+        overflow: inherit;
     }
 
     section.plataformaJuego h2 {
         padding: 2rem 0;
+    }
+
+
+    section.plataformaJuego ul{
+        flex-direction: inherit;
+        margin-left: auto;
+        overflow: auto;
+        width: auto;
     }
 
     section.plataformaJuego ul li {
@@ -648,6 +668,13 @@ section.contacto ul li a:hover i {
     section.plataformaJuego ul li a {
         padding: 10px;
         color: #fff;
+    }
+
+    section.plataformaJuego .scrollPagina{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: flex-start;
     }
 
     section.plataformaJuego .card {
