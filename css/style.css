@@ -142,7 +142,7 @@ header nav ul li:hover {
 }
 
 header .navbar-collapse {
-    height: 160px;
+    height: 205px;
 }
 
 header nav.navbar button {
@@ -490,6 +490,10 @@ section.contacto ul li a {
 
 section.contacto ul li a:hover i {
     color: #bf9823;
+}
+
+@media (min-width: 576px) and (max-width: 576px) {
+
 }
 
 /*Breakpoint mas grande que Celular*/
