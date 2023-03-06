@@ -608,7 +608,6 @@ section.noticias .col-md-4 p{
     height: 180px;
     font-size: 00.8rem;
 }
-}
 
 }
 
@@ -672,7 +671,6 @@ section.noticias .col-md-4 p{
     header nav ul li {
         list-style: none;
         display: flex;
-
     }
 
     header nav ul li a {
