@@ -1,0 +1,1019 @@
+//SCSS CREADO POR GABRIEL LAGROTTERIA PARA CODERHOUSE EN LA CLASE DESARROLLO WEB
+
+//ESTILOS GENERALES DEL SITIO
+
+* {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+
+    @font-face {
+        font-family: "Mantinia";
+        src: url("./fonts/mantiniaRegular.woff2");
+    }
+}
+
+$color-primario: #bf981b;
+$color-secundario: #074845;
+
+header,
+header li,
+header ul,
+h1,
+h2,
+h3,
+header a {
+    font-family: "Mantinia";
+}
+
+h1,
+h2,
+h3 {
+    color: $color-primario;
+}
+
+body {
+    background-color: #000;
+    height: auto;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    section {
+        position: relative;
+        padding: 60px 0px;
+    }
+}
+
+//HEADER DEL SITIO
+
+header {
+    height: auto;
+
+    ul {
+        padding: 0px;
+        margin-bottom: 0px;
+
+        &.seccionRedes {
+            position: absolute;
+            display: flex;
+            right: 60px;
+            top: 40px;
+            width: 150px;
+
+            li.logoRed {
+                flex: auto;
+                font-size: 25px;
+
+                &:hover a i {
+                    color: #ffc107;
+                }
+            }
+        }
+
+        li.logo {
+            width: 120px;
+            height: auto;
+            padding: 0px;
+            margin-left: 10px;
+
+            a {
+                display: block;
+                text-align: center;
+                font-size: 0.8rem;
+                color: $color-primario;
+
+                img {
+                    height: auto;
+                    width: 85px;
+                }
+            }
+        }
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 5vh;
+
+        li,
+        li a {
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            display: flex;
+
+            a {
+                text-align: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                height: 5vh;
+                border-bottom: 1px solid;
+
+                &:hover,
+                &.active {
+                    color: #ffc107;
+                    background-color: #3c3930;
+                }
+            }
+        }
+
+        .navbar-collapse {
+            height: 205px;
+        }
+
+        .navbar button {
+            position: absolute;
+            right: 45px;
+            top: -60px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+    }
+}
+
+//video debajo del Header
+
+.videoSinAudio,
+.videoSinAudio video,
+.videoSinAudio video source {
+    height: auto;
+    width: 100%;
+}
+
+.videoSinAudio {
+    padding: 0px;
+}
+
+//SECCION DETALLES DEL JUEGO
+
+$elden-ring-fondo: url(../img/eldenRingFondo.jpg) no-repeat;
+
+section.detallesJuego {
+    padding: 30px 20px;
+    background: $elden-ring-fondo;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    ul,
+    .plataformaJuego ul {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        li {
+            margin: 0 5px;
+
+            span {
+                color: #bf981b;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+
+    iframe {
+        width: 100%;
+        height: 35vh;
+        margin-top: 10px;
+    }
+
+    h2 {
+        margin: 30px 0px 20px;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+}
+
+.plataformaJuego {
+    padding: 10px;
+    overflow: hidden;
+}
+
+section.plataformaJuego {
+    padding: 10px;
+    overflow: hidden;
+
+    .row:first-child {
+        width: 100%;
+    }
+
+    h2 {
+        padding: 2rem 0;
+    }
+
+    ul {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        margin-left: -10px;
+        overflow: scroll;
+        width: 97vw;
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        & {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    }
+
+    ul li {
+        border: 1px solid $color-primario;
+        border-radius: 5%;
+        text-align: center;
+        padding: 0.5rem;
+        background: $color-secundario;
+        height: 60px;
+        display: flex;
+
+        a {
+            padding: 10px;
+            color: #fff;
+            width: 150px;
+        }
+    }
+
+    .scrollPagina {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+    }
+
+    .card {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        background: $elden-ring-fondo;
+        margin-right: 15px;
+
+        a {
+            width: 100%;
+            margin: 20px 0px;
+            border: 1px solid #fff;
+            background-color: $color-primario;
+            font-weight: 800;
+        }
+
+        a:active,
+        a:hover {
+            border: 1px solid $color-primario;
+            color: $color-primario;
+            background-color: transparent;
+        }
+
+        h4 {
+            color: $color-primario;
+            font-size: 1.2rem;
+            font-weight: 900;
+            height: 50px;
+            text-align: center;
+        }
+    }
+
+    /* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
+    .stickyFingers {
+        top: 857px;
+        right: 40px;
+        float: right;
+        width: auto;
+        position: sticky;
+        display: initial;
+        z-index: 1000000;
+
+        .comprarSticky {
+            text-align: center;
+            color: #FFF;
+            background-color: $color-primario;
+            border-radius: 6px;
+            padding: 4px;
+
+            i {
+                font-size: 32px;
+            }
+        }
+    }
+
+}
+
+/*Seccion Noticias*/
+
+
+$noticias-background: url(../img/eldenLordSaturado.jpeg) no-repeat;
+
+section.noticias {
+    background: $noticias-background;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        margin: 30px 0px;
+    }
+
+    a,
+    button {
+        width: 100%;
+        margin: 20px 0px;
+        border: 1px solid #fff;
+        background-color: $color-primario;
+        font-weight: 800;
+    }
+
+    a:active,
+    a:hover,
+    button:active,
+    button:hover {
+        border: 1px solid $color-primario;
+        ;
+        color: $color-primario;
+        background-color: transparent;
+    }
+}
+
+.fondoNegro {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+    padding: 40px 20px;
+}
+
+.modal h5 {
+    color: $color-primario;
+}
+
+.modal p {
+    color: #000;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #0a2324;
+    height: auto;
+
+    img {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/*Clases de Aventurero*/
+
+section.claseAventureros{
+    .card {
+        background-color: $color-primario;
+    }
+    .card h2 {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card p {
+        color: #fff;
+        text-align: center;
+    }
+}
+
+/*Seccion Estrategias Jefes*/
+
+
+section.jefes{
+    .accordion-body {
+        background-color: #000;
+        border-color: #fff;
+        display: flex;
+        flex-direction: column-reverse;
+        img {
+            width: 100%;
+        }
+    }
+    button.accordion-button {
+        color: #ffc107;
+        background-color: #3c3930;
+        font-family: "Mantinia";
+        text-transform: uppercase;
+    }
+}
+
+
+.accordion-item {
+    border: none;
+}
+
+/*Juegos Similares*/
+
+section.juegosSimilares{
+    img {
+        width: 100%;
+    }
+    h2 {
+        margin: 40px 20px;
+        font-size: 1.5rem;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+}
+
+/*Pagina Contacto*/
+
+$background-contacto: url(../img/imgNoticia2.png) no-repeat;
+
+
+section.contacto {
+    background:  $background-contacto;
+    background-size: cover;
+    padding: 0px;
+    .form-group {
+        padding: 10px 0px;
+    }
+    .col-lg-6{
+        p {
+            text-align: justify;
+            margin: 20px 0px;
+        }
+    }
+    button {
+        width: 100%;
+        margin: 20px 0px;
+        border: 1px solid #fff;
+        background-color: $color-primario;
+        font-weight: 800;
+    }
+    button:hover,
+    button:active{
+        border: 1px solid $color-primario;
+    color: $color-primario;
+    background-color: transparent;
+    }
+    ul {
+        padding: 0px;
+        margin-top: 60px;
+        li {
+            float: left;
+            margin: 0px 20px;
+            a {
+                font-size: 4rem;
+            }
+            a:hover{
+                i {
+                    color: $color-primario;
+                }
+            } 
+        }
+    }
+}
+
+
+/*EMPIEZAN LOS MEDIAQUERIES */
+
+$tablet: 768px;
+$desktop: 992px;
+
+/*VISTA DE TABLET */
+
+@media (min-width: $tablet){
+    /*Redes Sociales del Header*/
+    header{
+        ul.seccionRedes {
+            position: absolute;
+            display: flex;
+            right: 60px;
+            top: 40px;
+            width: 150px;
+            li.logoRed {
+                flex: auto;
+                font-size: 25px;
+            }
+        }
+
+        /*Logo del Header */
+        ul{
+            li.logo {
+                width: 120px;
+                height: auto;
+                padding: 10px;
+                margin-left: 60px;
+                a {
+                    display: block;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    color: $color-primario;
+                    img {
+                        height: auto;
+                        width: 85px;
+                    }
+                }
+            } 
+        }
+        /*Navbar */
+        nav{
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                height: 5vh;
+                border-top: 1px solid #ffc10736;
+                border-bottom: 1px solid #ffc10736;
+                width: 100%;
+                li{
+                    list-style: none;
+                    display: flex;
+                    width: 100%;
+                    a{
+                        width: 100%;
+                        text-align: center;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        border-left: 1px solid #ffc10736;
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        height: auto;
+                    }
+                }
+                li.active, li:hover{
+                    a{ color: #ffc107;}
+                }
+                li.active{
+                    a{
+                        background-color: #3c3930;
+                    }
+                }
+                li.logoRed:hover{
+                    a{
+                        i{ color: #ffc107;}
+                    }
+                }
+                li:hover{
+                    background-color: #3c3930;
+                }
+            }
+        }
+        .navbar-collapse {
+            height: auto;
+        }
+        } 
+
+ /* Detalles Juego Index */
+ section.detallesJuego{
+    p {
+        text-align: justify;
+        margin-bottom: 27px;
+        font-size: 0.7rem;
+    }
+ }
+
+ /* Noticias Index */
+
+ section.noticias{
+     h3 {
+    height: 90px;
+    font-size: 1rem;
+}
+.col-md-4{
+    p {
+        height: 180px;
+        font-size: 00.8rem;
+    }
+}
+}
+
+/*Jefes */
+
+section.jefes{
+    .accordion-body {
+        flex-direction: row;
+    }
+}
+
+
+/*Cierra el Media query*/
+}
+
+
+@media (min-width: $desktop){
+
+    
+
+    header{
+         /*Redes Sociales del Header*/
+         ul.seccionRedes {
+            position: absolute;
+            display: flex;
+            right: 60px;
+            top: 40px;
+            width: 150px;
+            li.logoRed {
+                flex: auto;
+                font-size: 25px;
+            }
+            li.logoRed:hover{
+                a{
+                    i{
+                        color: #ffc107;  
+                    }
+                }
+            }
+        }
+    /*logo del header */
+        ul{
+        li.logo {
+            width: 120px;
+            height: auto;
+            padding: 10px;
+            margin-left: 60px;
+            a {
+                display: block;
+                text-align: center;
+                font-size: 0.8rem;
+                color: #bf9823;
+                img {
+                    height: auto;
+                    width: 85px;
+                }
+            }
+        }
+    }
+
+    /* Navbar */
+
+    nav{
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            height: 5vh;
+            border-top: 1px solid #ffc10736;
+            border-bottom: 1px solid #ffc10736;
+            width: 100%;
+            li,li a {
+                width: 100%;
+            }
+            li {
+                list-style: none;
+                display: flex;
+                a {
+                    text-align: center;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #ffffff;
+                    border-left: 1px solid #ffc10736;
+                    font-size: 0.8rem;
+                    text-transform: uppercase;
+                    height: auto;
+                }
+            }
+            li.active,
+            li:hover{
+                background-color: #3c3930;
+                a{
+                    color: #ffc107;
+                    background-color: #3c3930;
+                }
+            }
+        }
+        
+    }
+    .navbar-collapse {
+        height: auto;
+    }
+
+/*CIERRA EL HEADER*/
+
+}
+
+/*video debajo del Header*/
+
+.videoSinAudio {
+    height: auto;
+    width: 100%;
+    video{
+        height: auto;
+    width: 100%;
+        source{
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+
+ /*SECCION DETALLES DEL JUEGO*/
+
+ section.detallesJuego {
+    padding: 60px 80px;
+    h2 {
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    ul{
+        display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin: 0 10px;
+        span{
+            color: $color-primario;
+    text-transform: uppercase;
+    font-weight: bold;
+        }
+    }
+    }
+    iframe{
+        width: 100%;
+    height: 55vh;
+    }
+    p {
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+}
+
+/* Plataforma de Juego */
+
+section.plataformaJuego {
+    padding: 0px 20px 30px;
+    overflow: inherit;
+    ul {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-direction: inherit;
+        margin-left: auto;
+        overflow: auto;
+        width: auto;
+        li {
+            margin: 0 10px;
+            border: 1px solid $color-primario;
+    border-radius: 8%;
+    text-align: center;
+    padding: 0.5rem;
+    background: $color-secundario;
+    height: auto;
+    a{
+        padding: 10px;
+    color: #fff;
+    }
+        }
+    }
+    h2 {
+        padding: 2rem 0;
+    }
+    .scrollPagina {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+    .card {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/eldenRingFondo.jpg) no-repeat;
+        a {
+            width: 100%;
+            margin: 20px 0px;
+            border: 1px solid #fff;
+            background-color: $color-primario;
+            font-weight: 800;
+            :active, :hover{
+                border: 1px solid $color-primario;
+    color: $color-primario;
+    background-color: transparent;
+            }
+        }
+        h4 {
+            color: $color-primario;
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+    }
+}
+
+/*Seccion Noticias*/
+
+section.noticias {
+    background: url(../img/eldenLordSaturado.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+    .fondoNegro {
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+        padding: 60px 0px;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        height: 7vh;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: 250px;
+        max-height: 250px;
+        margin: 30px 0px;
+    }
+    .col-md-4{
+        p {
+            height: 150px;
+            font-size: 1.1rem;
+        }
+        a,button{
+            width: 100%;
+    margin: 20px 0px;
+    border: 1px solid #fff;
+    background-color: #bf9823;
+    font-weight: 800;
+        }
+        a:active, a:hover, button:active, button:hover{
+            border: 1px solid #bf9823;
+    color: #bf9823;
+    background-color: transparent;
+        }
+    }
+    .modal{
+        h5 {
+            color: #bf9823;
+        }
+        p {
+            color: #000;
+        }
+    }
+
+}
+
+
+
+ /* FOOTER */
+
+ footer {
+    background-color: #0a2324;
+    height: 16vh;
+    img {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    p {
+        margin-top: 55px;
+    }
+}
+
+   /*Clases de Aventurero*/
+
+   section.claseAventureros{
+    .card {
+        background-color: $color-primario;
+        h2 {
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+        }
+        
+    }
+
+}
+
+ /*Seccion Estrategias Jefes*/
+
+ section.jefes{
+    .accordion-body {
+        flex-direction: row;
+    }
+}
+
+ /*Seccion Juegos Similares*/
+
+ section.juegosSimilares{
+    img {
+        width: 100%;
+    }
+    h2 {
+        margin: 40px 20px;
+        font-size: 1.5rem;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+/*Pagina Contacto*/
+
+section.contacto {
+    background: $background-contacto;
+    background-size: cover;
+    padding: 0px;
+    .form-group {
+        padding: 10px 0px;
+    }
+    .col-lg-6{
+        p {
+            text-align: justify;
+            margin: 20px 0px;
+        }
+    }
+    button {
+        width: 100%;
+        margin: 20px 0px;
+        border: 1px solid #fff;
+        background-color: $color-primario;
+        font-weight: 800;
+        :hover, :active{
+            border: 1px solid $color-primario;
+    color: $color-primario;
+    background-color: transparent;
+        }
+    }
+    ul {
+        padding: 0px;
+        margin-top: 60px;
+        li {
+            float: left;
+            margin: 0px 20px;
+        }
+        a {
+            font-size: 4rem;
+            :hover{
+                i{
+                
+                        color: #bf9823;
+                 
+                }
+            }
+        }
+    }
+}
+
+
+/*Cierra el media query desktop*/  
+}

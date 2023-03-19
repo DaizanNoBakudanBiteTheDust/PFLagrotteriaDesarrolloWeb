@@ -1,18 +1,12 @@
-/*CSS CREADO POR GABRIEL LAGROTTERIA PARA CODERHOUSE EN LA CLASE DESARROLLO WEB*/
-
-
-/*ESTILOS GENERALES DEL SITIO */
-
 * {
-    font-family: "Open Sans";
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
 }
-
 @font-face {
-    font-family: "Mantinia";
-    src: url("./fonts/mantiniaRegular.woff2");
+  font-family: "Mantinia";
+  src: url("./fonts/mantiniaRegular.woff2");
 }
 
 header,
@@ -22,1059 +16,826 @@ h1,
 h2,
 h3,
 header a {
-    font-family: "Mantinia";
+  font-family: "Mantinia";
 }
 
 h1,
 h2,
 h3 {
-    color: #bf9823;
+  color: #bf981b;
 }
 
 body {
-    background-color: #000;
-    height: auto;
+  background-color: #000;
+  height: auto;
 }
-
-a {
-    text-decoration: none;
+body a {
+  text-decoration: none;
 }
-
-li {
-    list-style: none;
+body li {
+  list-style: none;
 }
-
-p {
-    font-size: 1.1rem;
+body p {
+  font-size: 1.1rem;
 }
-
-section {
-    position: relative;
-    padding: 60px 0px;
+body section {
+  position: relative;
+  padding: 60px 0px;
 }
-
-/*HEADER DEL SITIO */
 
 header {
-    height: auto;
+  height: auto;
 }
-
 header ul {
-    padding: 0px;
-    margin-bottom: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+header ul.seccionRedes {
+  position: absolute;
+  display: flex;
+  right: 60px;
+  top: 40px;
+  width: 150px;
+}
+header ul.seccionRedes li.logoRed {
+  flex: auto;
+  font-size: 25px;
+}
+header ul.seccionRedes li.logoRed:hover a i {
+  color: #ffc107;
+}
+header ul li.logo {
+  width: 120px;
+  height: auto;
+  padding: 0px;
+  margin-left: 10px;
+}
+header ul li.logo a {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bf981b;
+}
+header ul li.logo a img {
+  height: auto;
+  width: 85px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 5vh;
+}
+header nav ul li,
+header nav ul li a {
+  width: 100%;
+}
+header nav ul li {
+  list-style: none;
+  display: flex;
+}
+header nav ul li a {
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  height: 5vh;
+  border-bottom: 1px solid;
+}
+header nav ul li a:hover, header nav ul li a.active {
+  color: #ffc107;
+  background-color: #3c3930;
+}
+header nav ul .navbar-collapse {
+  height: 205px;
+}
+header nav ul .navbar button {
+  position: absolute;
+  right: 45px;
+  top: -60px;
+  border: 1px solid rgb(255, 255, 255);
 }
 
-header ul.seccionRedes {
+.videoSinAudio,
+.videoSinAudio video,
+.videoSinAudio video source {
+  height: auto;
+  width: 100%;
+}
+
+.videoSinAudio {
+  padding: 0px;
+}
+
+section.detallesJuego {
+  padding: 30px 20px;
+  background: url(../img/eldenRingFondo.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section.detallesJuego ul,
+section.detallesJuego .plataformaJuego ul {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+section.detallesJuego ul li,
+section.detallesJuego .plataformaJuego ul li {
+  margin: 0 5px;
+}
+section.detallesJuego ul li span,
+section.detallesJuego .plataformaJuego ul li span {
+  color: #bf981b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section.detallesJuego iframe {
+  width: 100%;
+  height: 35vh;
+  margin-top: 10px;
+}
+section.detallesJuego h2 {
+  margin: 30px 0px 20px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+section.detallesJuego p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.plataformaJuego {
+  padding: 10px;
+  overflow: hidden;
+}
+
+section.plataformaJuego {
+  padding: 10px;
+  overflow: hidden;
+  /* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
+}
+section.plataformaJuego .row:first-child {
+  width: 100%;
+}
+section.plataformaJuego h2 {
+  padding: 2rem 0;
+}
+section.plataformaJuego ul {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  margin-left: -10px;
+  overflow: scroll;
+  width: 97vw;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+section.plataformaJuego ul::-webkit-scrollbar {
+  display: none;
+}
+section.plataformaJuego ul {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+section.plataformaJuego ul li {
+  border: 1px solid #bf981b;
+  border-radius: 5%;
+  text-align: center;
+  padding: 0.5rem;
+  background: #074845;
+  height: 60px;
+  display: flex;
+}
+section.plataformaJuego ul li a {
+  padding: 10px;
+  color: #fff;
+  width: 150px;
+}
+section.plataformaJuego .scrollPagina {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: flex-start;
+}
+section.plataformaJuego .card {
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/eldenRingFondo.jpg) no-repeat;
+  margin-right: 15px;
+}
+section.plataformaJuego .card a {
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid #fff;
+  background-color: #bf981b;
+  font-weight: 800;
+}
+section.plataformaJuego .card a:active,
+section.plataformaJuego .card a:hover {
+  border: 1px solid #bf981b;
+  color: #bf981b;
+  background-color: transparent;
+}
+section.plataformaJuego .card h4 {
+  color: #bf981b;
+  font-size: 1.2rem;
+  font-weight: 900;
+  height: 50px;
+  text-align: center;
+}
+section.plataformaJuego .stickyFingers {
+  top: 857px;
+  right: 40px;
+  float: right;
+  width: auto;
+  position: sticky;
+  display: initial;
+  z-index: 1000000;
+}
+section.plataformaJuego .stickyFingers .comprarSticky {
+  text-align: center;
+  color: #FFF;
+  background-color: #bf981b;
+  border-radius: 6px;
+  padding: 4px;
+}
+section.plataformaJuego .stickyFingers .comprarSticky i {
+  font-size: 32px;
+}
+
+/*Seccion Noticias*/
+section.noticias {
+  background: url(../img/eldenLordSaturado.jpeg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0px;
+}
+section.noticias h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+}
+section.noticias p {
+  text-align: justify;
+}
+section.noticias img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  margin: 30px 0px;
+}
+section.noticias a,
+section.noticias button {
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid #fff;
+  background-color: #bf981b;
+  font-weight: 800;
+}
+section.noticias a:active,
+section.noticias a:hover,
+section.noticias button:active,
+section.noticias button:hover {
+  border: 1px solid #bf981b;
+  color: #bf981b;
+  background-color: transparent;
+}
+
+.fondoNegro {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+  padding: 40px 20px;
+}
+
+.modal h5 {
+  color: #bf981b;
+}
+
+.modal p {
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0a2324;
+  height: auto;
+}
+footer img {
+  width: 100%;
+  margin: 20px 0px;
+}
+footer p {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+/*Clases de Aventurero*/
+section.claseAventureros .card {
+  background-color: #bf981b;
+}
+section.claseAventureros .card h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+section.claseAventureros .card p {
+  color: #fff;
+  text-align: center;
+}
+
+/*Seccion Estrategias Jefes*/
+section.jefes .accordion-body {
+  background-color: #000;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column-reverse;
+}
+section.jefes .accordion-body img {
+  width: 100%;
+}
+section.jefes button.accordion-button {
+  color: #ffc107;
+  background-color: #3c3930;
+  font-family: "Mantinia";
+  text-transform: uppercase;
+}
+
+.accordion-item {
+  border: none;
+}
+
+/*Juegos Similares*/
+section.juegosSimilares img {
+  width: 100%;
+}
+section.juegosSimilares h2 {
+  margin: 40px 20px;
+  font-size: 1.5rem;
+}
+section.juegosSimilares h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/*Pagina Contacto*/
+section.contacto {
+  background: url(../img/imgNoticia2.png) no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+section.contacto .form-group {
+  padding: 10px 0px;
+}
+section.contacto .col-lg-6 p {
+  text-align: justify;
+  margin: 20px 0px;
+}
+section.contacto button {
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid #fff;
+  background-color: #bf981b;
+  font-weight: 800;
+}
+section.contacto button:hover,
+section.contacto button:active {
+  border: 1px solid #bf981b;
+  color: #bf981b;
+  background-color: transparent;
+}
+section.contacto ul {
+  padding: 0px;
+  margin-top: 60px;
+}
+section.contacto ul li {
+  float: left;
+  margin: 0px 20px;
+}
+section.contacto ul li a {
+  font-size: 4rem;
+}
+section.contacto ul li a:hover i {
+  color: #bf981b;
+}
+
+/*EMPIEZAN LOS MEDIAQUERIES */
+/*VISTA DE TABLET */
+@media (min-width: 768px) {
+  /*Redes Sociales del Header*/
+  header {
+    /*Logo del Header */
+    /*Navbar */
+  }
+  header ul.seccionRedes {
     position: absolute;
     display: flex;
     right: 60px;
     top: 40px;
     width: 150px;
-}
-
-header ul.seccionRedes li.logoRed {
+  }
+  header ul.seccionRedes li.logoRed {
     flex: auto;
     font-size: 25px;
-}
-
-/*Logo del Header*/
-
-header ul li.logo {
+  }
+  header ul li.logo {
     width: 120px;
     height: auto;
-    padding: 0px;
-    margin-left: 10px;
-}
-
-header ul li.logo a {
+    padding: 10px;
+    margin-left: 60px;
+  }
+  header ul li.logo a {
     display: block;
     text-align: center;
     font-size: 0.8rem;
-    color: #bf9823;
-}
-
-header ul li.logo a img {
+    color: #bf981b;
+  }
+  header ul li.logo a img {
     height: auto;
     width: 85px;
-}
-
-/* Navbar */
-
-header nav ul {
+  }
+  header nav ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: 5vh;
-}
-
-header nav ul li,
-header nav ul li a {
+    border-top: 1px solid rgba(255, 193, 7, 0.2117647059);
+    border-bottom: 1px solid rgba(255, 193, 7, 0.2117647059);
     width: 100%;
-}
-
-header nav ul li {
+  }
+  header nav ul li {
     list-style: none;
     display: flex;
-
-}
-
-header nav ul li a {
+    width: 100%;
+  }
+  header nav ul li a {
+    width: 100%;
     text-align: center;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
+    border-left: 1px solid rgba(255, 193, 7, 0.2117647059);
     font-size: 0.8rem;
     text-transform: uppercase;
-    height: 5vh;
-    border-bottom: 1px solid;
-}
-
-header nav ul li.active a,
-header nav ul li:hover a,
-header ul.seccionRedes li.logoRed:hover a i {
+    height: auto;
+  }
+  header nav ul li.active a, header nav ul li:hover a {
     color: #ffc107;
-}
-
-header nav ul li.active a,
-header nav ul li:hover {
+  }
+  header nav ul li.active a {
     background-color: #3c3930;
+  }
+  header nav ul li.logoRed:hover a i {
+    color: #ffc107;
+  }
+  header nav ul li:hover {
+    background-color: #3c3930;
+  }
+  header .navbar-collapse {
+    height: auto;
+  }
+  /* Detalles Juego Index */
+  section.detallesJuego p {
+    text-align: justify;
+    margin-bottom: 27px;
+    font-size: 0.7rem;
+  }
+  /* Noticias Index */
+  section.noticias h3 {
+    height: 90px;
+    font-size: 1rem;
+  }
+  section.noticias .col-md-4 p {
+    height: 180px;
+    font-size: 0.8rem;
+  }
+  /*Jefes */
+  section.jefes .accordion-body {
+    flex-direction: row;
+  }
+  /*Cierra el Media query*/
 }
-
-header .navbar-collapse {
-    height: 205px;
-}
-
-header nav.navbar button {
+@media (min-width: 992px) {
+  header {
+    /*Redes Sociales del Header*/
+    /*logo del header */
+    /* Navbar */
+    /*CIERRA EL HEADER*/
+  }
+  header ul.seccionRedes {
     position: absolute;
-    right: 45px;
-    top: -60px;
-    border: 1px solid rgb(255, 255, 255);
-}
-
-
-/*video debajo del Header*/
-
-.videoSinAudio,
-.videoSinAudio video,
-.videoSinAudio video source {
+    display: flex;
+    right: 60px;
+    top: 40px;
+    width: 150px;
+  }
+  header ul.seccionRedes li.logoRed {
+    flex: auto;
+    font-size: 25px;
+  }
+  header ul.seccionRedes li.logoRed:hover a i {
+    color: #ffc107;
+  }
+  header ul li.logo {
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    margin-left: 60px;
+  }
+  header ul li.logo a {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #bf9823;
+  }
+  header ul li.logo a img {
+    height: auto;
+    width: 85px;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 5vh;
+    border-top: 1px solid rgba(255, 193, 7, 0.2117647059);
+    border-bottom: 1px solid rgba(255, 193, 7, 0.2117647059);
+    width: 100%;
+  }
+  header nav ul li, header nav ul li a {
+    width: 100%;
+  }
+  header nav ul li {
+    list-style: none;
+    display: flex;
+  }
+  header nav ul li a {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-left: 1px solid rgba(255, 193, 7, 0.2117647059);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    height: auto;
+  }
+  header nav ul li.active,
+  header nav ul li:hover {
+    background-color: #3c3930;
+  }
+  header nav ul li.active a,
+  header nav ul li:hover a {
+    color: #ffc107;
+    background-color: #3c3930;
+  }
+  header .navbar-collapse {
+    height: auto;
+  }
+  /*video debajo del Header*/
+  .videoSinAudio {
     height: auto;
     width: 100%;
-}
-
-.videoSinAudio {
-    padding: 0px;
-}
-
-/*SECCION DETALLES DEL JUEGO*/
-
-section.detallesJuego {
-    padding: 30px 20px;
-    background: url(../img/eldenRingFondo.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section.detallesJuego ul,
-section.plataformaJuego ul {
+  }
+  .videoSinAudio video {
+    height: auto;
+    width: 100%;
+  }
+  .videoSinAudio video source {
+    height: auto;
+    width: 100%;
+  }
+  /*SECCION DETALLES DEL JUEGO*/
+  section.detallesJuego {
+    padding: 60px 80px;
+  }
+  section.detallesJuego h2 {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  section.detallesJuego ul {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    padding: 0;
-}
-
-section.detallesJuego ul li,
-section.plataformaJuego ul li {
-    margin: 0 5px;
-}
-
-section.detallesJuego ul li span {
+  }
+  section.detallesJuego ul li {
+    margin: 0 10px;
+  }
+  section.detallesJuego ul li span {
     color: #bf981b;
     text-transform: uppercase;
     font-weight: bold;
-}
-
-section.detallesJuego iframe {
+  }
+  section.detallesJuego iframe {
     width: 100%;
-    height: 35vh;
-    margin-top: 10px;
-}
-
-section.detallesJuego h2 {
-    margin: 30px 0px 20px;
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-section.detallesJuego p {
+    height: 55vh;
+  }
+  section.detallesJuego p {
     text-align: justify;
-    margin-bottom: 30px;
-}
-
-
-/*SECCION PLATAFORMA DE JUEGO*/
-
-section.plataformaJuego {
-    padding: 10px;
-    overflow: hidden;
-}
-
-/*El ROW NO SE TOCA PERO EN ESTE CASO ERA NECESARIO */
-section.plataformaJuego .row:first-child {
-    width: 100%;
-}
-
-section.plataformaJuego h2 {
-    padding: 2rem 0;
-}
-
-section.plataformaJuego ul {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    font-size: 1.1rem;
+  }
+  /* Plataforma de Juego */
+  section.plataformaJuego {
+    padding: 0px 20px 30px;
+    overflow: inherit;
+  }
+  section.plataformaJuego ul {
     display: flex;
-    flex-direction: row;
-    margin-left: -10px;
-    overflow: scroll;
-    width: 97vw;
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-section.plataformaJuego ul::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-section.plataformaJuego ul {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-section.plataformaJuego ul li {
-    border: 1px solid #bf9823;
-    border-radius: 5%;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-direction: inherit;
+    margin-left: auto;
+    overflow: auto;
+    width: auto;
+  }
+  section.plataformaJuego ul li {
+    margin: 0 10px;
+    border: 1px solid #bf981b;
+    border-radius: 8%;
     text-align: center;
     padding: 0.5rem;
     background: #074845;
-    height: 60px;
-    display: flex;
-}
-
-section.plataformaJuego ul li a {
+    height: auto;
+  }
+  section.plataformaJuego ul li a {
     padding: 10px;
     color: #fff;
-    width: 150px;
-}
-
-section.plataformaJuego .scrollPagina {
+  }
+  section.plataformaJuego h2 {
+    padding: 2rem 0;
+  }
+  section.plataformaJuego .scrollPagina {
     display: flex;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow: hidden;
     justify-content: flex-start;
-}
-
-section.plataformaJuego .card {
+  }
+  section.plataformaJuego .card {
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
     background: url(../img/eldenRingFondo.jpg) no-repeat;
-    margin-right: 15px;
-}
-
-section.plataformaJuego .card a {
+  }
+  section.plataformaJuego .card a {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
-    background-color: #bf9823;
+    background-color: #bf981b;
     font-weight: 800;
-}
-
-section.plataformaJuego .card a:active,
-section.plataformaJuego .card a:hover {
-    border: 1px solid #bf9823;
-    color: #bf9823;
+  }
+  section.plataformaJuego .card a :active, section.plataformaJuego .card a :hover {
+    border: 1px solid #bf981b;
+    color: #bf981b;
     background-color: transparent;
-}
-
-section.plataformaJuego .card h4 {
+  }
+  section.plataformaJuego .card h4 {
     color: #bf981b;
     font-size: 1.2rem;
     font-weight: 900;
-    height: 50px;
-    text-align: center;
-}
-
-/* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
-.stickyFingers {
-    top: 857px;
-    right: 40px;
-    float: right;
-    width: auto;
-    position: sticky;
-    display: initial;
-    z-index: 1000000;
-}
-
-.stickyFingers .comprarSticky {
-    text-align: center;
-    color: #FFF;
-    background-color: #bf981b;
-    border-radius: 6px;
-    padding: 4px;
-}
-
-.stickyFingers .comprarSticky i {
-    font-size: 32px;
-}
-
-/*Seccion Noticias*/
-
-section.noticias {
+  }
+  /*Seccion Noticias*/
+  section.noticias {
     background: url(../img/eldenLordSaturado.jpeg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 0px;
-}
-
-.fondoNegro {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
-    padding: 40px 20px;
-}
-
-section.noticias h3 {
+  }
+  section.noticias .fondoNegro {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+    padding: 60px 0px;
+  }
+  section.noticias h3 {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    height: 7vh;
     display: flex;
     align-items: baseline;
     justify-content: center;
     text-align: center;
-}
-
-section.noticias p {
-    text-align: justify;
-}
-
-section.noticias img {
+  }
+  section.noticias img {
     width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 250px;
+    max-height: 250px;
     margin: 30px 0px;
-}
-
-section.noticias a,
-section.noticias button {
+  }
+  section.noticias .col-md-4 p {
+    height: 150px;
+    font-size: 1.1rem;
+  }
+  section.noticias .col-md-4 a, section.noticias .col-md-4 button {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
     background-color: #bf9823;
     font-weight: 800;
-}
-
-section.noticias a:active,
-section.noticias a:hover,
-section.noticias button:active,
-section.noticias button:hover {
+  }
+  section.noticias .col-md-4 a:active, section.noticias .col-md-4 a:hover, section.noticias .col-md-4 button:active, section.noticias .col-md-4 button:hover {
     border: 1px solid #bf9823;
     color: #bf9823;
     background-color: transparent;
-}
-
-.modal h5 {
+  }
+  section.noticias .modal h5 {
     color: #bf9823;
-}
-
-.modal p {
+  }
+  section.noticias .modal p {
     color: #000;
-}
-
-/* FOOTER */
-
-footer {
+  }
+  /* FOOTER */
+  footer {
     background-color: #0a2324;
-    height: auto;
-}
-
-footer img {
+    height: 16vh;
+  }
+  footer img {
     width: 100%;
     margin: 20px 0px;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 0.8rem;
-}
-
-/*Clases de Aventurero*/
-
-section.claseAventureros .card {
-    background-color: #bf9823;
-}
-
-section.claseAventureros .card h2 {
+  }
+  footer p {
+    margin-top: 55px;
+  }
+  /*Clases de Aventurero*/
+  section.claseAventureros .card {
+    background-color: #bf981b;
+  }
+  section.claseAventureros .card h2 {
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
-}
-
-section.claseAventureros .card p {
+  }
+  section.claseAventureros .card p {
     color: #fff;
     text-align: center;
-}
-
-/*Seccion Estrategias Jefes*/
-
-section.jefes .accordion-body img {
+  }
+  /*Seccion Estrategias Jefes*/
+  section.jefes .accordion-body {
+    flex-direction: row;
+  }
+  /*Seccion Juegos Similares*/
+  section.juegosSimilares img {
     width: 100%;
-}
-
-section.jefes .accordion-body {
-    background-color: #000;
-    border-color: #fff;
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-section.jefes img {
-    width: 100%;
-}
-
-.accordion-item {
-    border: none;
-}
-
-section.jefes button.accordion-button {
-    color: #ffc107;
-    background-color: #3c3930;
-    font-family: "Mantinia";
-    text-transform: uppercase;
-}
-
-/*Juegos Similares*/
-
-section.juegosSimilares img {
-    width: 100%;
-}
-
-section.juegosSimilares h2 {
+  }
+  section.juegosSimilares h2 {
     margin: 40px 20px;
     font-size: 1.5rem;
-}
-
-section.juegosSimilares h3 {
+  }
+  section.juegosSimilares h3 {
     text-align: center;
     font-size: 1.2rem;
     text-transform: uppercase;
-}
-
-/*Pagina Contacto*/
-
-section.contacto {
+  }
+  /*Pagina Contacto*/
+  section.contacto {
     background: url(../img/imgNoticia2.png) no-repeat;
     background-size: cover;
     padding: 0px;
-}
-
-section.contacto .form-group {
+  }
+  section.contacto .form-group {
     padding: 10px 0px;
-}
-
-section.contacto .col-lg-6 p {
+  }
+  section.contacto .col-lg-6 p {
     text-align: justify;
     margin: 20px 0px;
-}
-
-section.contacto button {
+  }
+  section.contacto button {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
-    background-color: #bf9823;
+    background-color: #bf981b;
     font-weight: 800;
-}
-
-section.contacto button:hover,
-section.contacto button:active {
-    border: 1px solid #bf9823;
-    color: #bf9823;
+  }
+  section.contacto button :hover, section.contacto button :active {
+    border: 1px solid #bf981b;
+    color: #bf981b;
     background-color: transparent;
-}
-
-section.contacto ul {
+  }
+  section.contacto ul {
     padding: 0px;
     margin-top: 60px;
-}
-
-section.contacto ul li {
+  }
+  section.contacto ul li {
     float: left;
     margin: 0px 20px;
-}
-
-section.contacto ul li a {
+  }
+  section.contacto ul a {
     font-size: 4rem;
-}
-
-section.contacto ul li a:hover i {
+  }
+  section.contacto ul a :hover i {
     color: #bf9823;
+  }
+  /*Cierra el media query desktop*/
 }
 
-@media (min-width: 768px) {
-    /*Redes Sociales del Header*/
-
-    header ul.seccionRedes {
-        position: absolute;
-        display: flex;
-        right: 60px;
-        top: 40px;
-        width: 150px;
-    }
-
-    header ul.seccionRedes li.logoRed {
-        flex: auto;
-        font-size: 25px;
-    }
-
-    /*Logo del Header*/
-
-    header ul li.logo {
-        width: 120px;
-        height: auto;
-        padding: 10px;
-        margin-left: 60px;
-    }
-
-    header ul li.logo a {
-        display: block;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #bf9823;
-    }
-
-    header ul li.logo a img {
-        height: auto;
-        width: 85px;
-    }
-
-    /* Navbar */
-
-    header nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        height: 5vh;
-        border-top: 1px solid #ffc10736;
-        border-bottom: 1px solid #ffc10736;
-        width: 100%;
-    }
-
-    header nav ul li,
-    header nav ul li a {
-        width: 100%;
-    }
-
-    header nav ul li {
-        list-style: none;
-        display: flex;
-
-    }
-
-    header nav ul li a {
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        border-left: 1px solid #ffc10736;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        height: auto;
-    }
-
-    header nav ul li.active a,
-    header nav ul li:hover a,
-    header ul.seccionRedes li.logoRed:hover a i {
-        color: #ffc107;
-    }
-
-    header nav ul li.active a,
-    header nav ul li:hover {
-        background-color: #3c3930;
-    }
-
-
-    header .navbar-collapse {
-        height: auto;
-    }
-
-    /* Detalles Juego Index */
-
-    section.detallesJuego p {
-        text-align: justify;
-        margin-bottom: 27px;
-        font-size: 0.7rem;
-    }
-
-    /* Noticias Index */
-
-    section.noticias h3 {
-        height: 90px;
-        font-size: 1rem;
-    }
-
-    section.noticias .col-md-4 p {
-        height: 180px;
-        font-size: 00.8rem;
-    }
-
-    section.jefes .accordion-body {
-        flex-direction: row;
-    }
-
-}
-
-/*Breakpoint vista de PC*/
-
-@media (min-width: 992px) {
-
-    /*Redes Sociales del Header*/
-
-    header ul.seccionRedes {
-        position: absolute;
-        display: flex;
-        right: 60px;
-        top: 40px;
-        width: 150px;
-    }
-
-    header ul.seccionRedes li.logoRed {
-        flex: auto;
-        font-size: 25px;
-    }
-
-    /*Logo del Header*/
-
-    header ul li.logo {
-        width: 120px;
-        height: auto;
-        padding: 10px;
-        margin-left: 60px;
-    }
-
-    header ul li.logo a {
-        display: block;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #bf9823;
-    }
-
-    header ul li.logo a img {
-        height: auto;
-        width: 85px;
-    }
-
-    /* Navbar */
-
-    header nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        height: 5vh;
-        border-top: 1px solid #ffc10736;
-        border-bottom: 1px solid #ffc10736;
-        width: 100%;
-    }
-
-    header nav ul li,
-    header nav ul li a {
-        width: 100%;
-    }
-
-    header nav ul li {
-        list-style: none;
-        display: flex;
-    }
-
-    header nav ul li a {
-        text-align: center;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        border-left: 1px solid #ffc10736;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        height: auto;
-    }
-
-    header nav ul li.active a,
-    header nav ul li:hover a,
-    header ul.seccionRedes li.logoRed:hover a i {
-        color: #ffc107;
-    }
-
-    header nav ul li.active a,
-    header nav ul li:hover {
-        background-color: #3c3930;
-    }
-
-
-    header .navbar-collapse {
-        height: auto;
-    }
-
-
-    /*video debajo del Header*/
-
-    .videoSinAudio,
-    .videoSinAudio video,
-    .videoSinAudio video source {
-        height: auto;
-        width: 100%;
-    }
-
-    .videoSinAudio {
-        padding: 0px;
-    }
-
-    /*SECCION DETALLES DEL JUEGO*/
-
-    section.detallesJuego {
-        padding: 60px 80px;
-    }
-
-    section.detallesJuego h2 {
-        text-align: left;
-        font-size: 1.6rem;
-    }
-
-    section.detallesJuego ul,
-    section.plataformaJuego ul {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section.detallesJuego ul li,
-    section.plataformaJuego ul li {
-        margin: 0 10px;
-    }
-
-    section.detallesJuego ul li span {
-        color: #bf981b;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-
-    section.detallesJuego iframe {
-        width: 100%;
-        height: 55vh;
-    }
-
-    section.detallesJuego p {
-        text-align: justify;
-        font-size: 1.1rem;
-    }
-
-
-    /*SECCION PLATAFORMA DE JUEGO*/
-
-    section.plataformaJuego {
-        padding: 0px 20px 30px;
-        overflow: inherit;
-    }
-
-    section.plataformaJuego h2 {
-        padding: 2rem 0;
-    }
-
-
-    section.plataformaJuego ul {
-        flex-direction: inherit;
-        margin-left: auto;
-        overflow: auto;
-        width: auto;
-    }
-
-    section.plataformaJuego ul li {
-        border: 1px solid #bf9823;
-        border-radius: 8%;
-        text-align: center;
-        padding: 0.5rem;
-        background: #074845;
-        height: auto;
-    }
-
-    section.plataformaJuego ul li a {
-        padding: 10px;
-        color: #fff;
-    }
-
-    section.plataformaJuego .scrollPagina {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: hidden;
-        justify-content: flex-start;
-    }
-
-    section.plataformaJuego .card {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-        background: url(../img/eldenRingFondo.jpg) no-repeat;
-    }
-
-    section.plataformaJuego .card a {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: #bf9823;
-        font-weight: 800;
-    }
-
-    section.plataformaJuego .card a:active,
-    section.plataformaJuego .card a:hover {
-        border: 1px solid #bf9823;
-        color: #bf9823;
-        background-color: transparent;
-    }
-
-    section.plataformaJuego .card h4 {
-        color: #bf981b;
-        font-size: 1.2rem;
-        font-weight: 900;
-    }
-
-    /*Seccion Noticias*/
-
-    section.noticias {
-        background: url(../img/eldenLordSaturado.jpeg) no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 0px;
-    }
-
-    .fondoNegro {
-        background:
-            linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
-        padding: 60px 0px;
-    }
-
-    section.noticias h3 {
-        text-transform: uppercase;
-        font-size: 1rem;
-        height: 7vh;
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        text-align: center;
-    }
-
-    section.noticias img {
-        width: 100%;
-        height: 250px;
-        max-height: 250px;
-        margin: 30px 0px;
-    }
-
-    section.noticias .col-md-4 p {
-        height: 150px;
-        font-size: 1.1rem;
-    }
-
-    section.noticias a,
-    section.noticias button {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: #bf9823;
-        font-weight: 800;
-    }
-
-    section.noticias a:active,
-    section.noticias a:hover,
-    section.noticias button:active,
-    section.noticias button:hover {
-        border: 1px solid #bf9823;
-        color: #bf9823;
-        background-color: transparent;
-    }
-
-    .modal h5 {
-        color: #bf9823;
-    }
-
-    .modal p {
-        color: #000;
-    }
-
-    /* FOOTER */
-
-    footer {
-        background-color: #0a2324;
-        height: 16vh;
-    }
-
-    footer img {
-        width: 100%;
-        margin: 20px 0px;
-    }
-
-    footer p {
-        margin-top: 55px;
-    }
-
-    /*Clases de Aventurero*/
-
-    section.claseAventureros .card {
-        background-color: #bf9823;
-    }
-
-    section.claseAventureros .card h2 {
-        color: #fff;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    section.claseAventureros .card p {
-        color: #fff;
-        text-align: center;
-    }
-
-    /*Seccion Estrategias Jefes*/
-
-    section.jefes .card-body img {
-        width: 100%;
-    }
-
-    section.jefes .card {
-        background-color: #000;
-        border-color: #fff;
-    }
-
-    section.jefes .accordion-body {
-        flex-direction: row;
-    }
-
-    /*Seccion Estrategias Juegos Similares*/
-
-    section.juegosSimilares img {
-        width: 100%;
-    }
-
-    section.juegosSimilares h2 {
-        margin: 40px 20px;
-        font-size: 1.5rem;
-
-
-    }
-
-    section.juegosSimilares h3 {
-        text-align: center;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-
-    /*Pagina Contacto*/
-
-    section.contacto {
-        background: url(../img/imgNoticia2.png) no-repeat;
-        background-size: cover;
-        padding: 0px;
-    }
-
-    section.contacto .form-group {
-        padding: 10px 0px;
-    }
-
-    section.contacto .col-lg-6 p {
-        text-align: justify;
-        margin: 20px 0px;
-    }
-
-    section.contacto button {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: #bf9823;
-        font-weight: 800;
-    }
-
-    section.contacto button:hover,
-    section.contacto button:active {
-        border: 1px solid #bf9823;
-        color: #bf9823;
-        background-color: transparent;
-    }
-
-    section.contacto ul {
-        padding: 0px;
-        margin-top: 60px;
-    }
-
-    section.contacto ul li {
-        float: left;
-        margin: 0px 20px;
-    }
-
-    section.contacto ul li a {
-        font-size: 4rem;
-    }
-
-    section.contacto ul li a:hover i {
-        color: #bf9823;
-    }
-
-/*Pagina Contacto*/
-
-    section.contacto {
-        background: url(../img/imgNoticia2.png) no-repeat;
-        background-size: cover;
-        padding: 0px;
-    }
-
-    section.contacto .form-group {
-        padding: 10px 0px;
-    }
-
-    section.contacto .col-lg-6 p {
-        text-align: justify;
-        margin: 20px 0px;
-    }
-
-    section.contacto button {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: #bf9823;
-        font-weight: 800;
-    }
-
-    section.contacto button:hover,
-    section.contacto button:active {
-        border: 1px solid #bf9823;
-        color: #bf9823;
-        background-color: transparent;
-    }
-
-    section.contacto ul {
-        padding: 0px;
-        margin-top: 60px;
-    }
-
-    section.contacto ul li {
-        float: left;
-        margin: 0px 20px;
-    }
-
-    section.contacto ul li a {
-        font-size: 4rem;
-    }
-
-    section.contacto ul li a:hover i {
-        color: #bf9823;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
