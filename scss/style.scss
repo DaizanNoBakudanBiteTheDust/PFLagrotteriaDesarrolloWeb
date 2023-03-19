@@ -1001,58 +1001,58 @@ $desktop: 992px;
     /*Clases de Aventurero*/
 
     section.claseAventureros {
-        .owl-carousel{
-            .owl-stage-outer{
-                .owl-stage{
-                    .owl-item{
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
                         .card {
                             background-color: #bf981b00;
-                            transform:scale(0.6);
+                            transform: scale(0.6);
+
                             h2 {
                                 color: #fff;
                                 font-size: 1.2rem;
                                 text-align: center;
                             }
-                
+
                             p {
                                 color: #fff;
                                 text-align: center;
                             }
-                
-                            
-                        }
-                        }
-                    .owl-item.center{
-                        .card {
-                            background-color: #bf981b57; 
-                            width: auto;
-                            transform:scale(1);
-                            transition: all 2s;
-                
-                            h2 {
-                                color: #fff;
-                                font-size: 1.2rem;
-                                text-align: center;
-                            }
-                
-                            p {
-                                color: #fff;
-                                text-align: center;
-                            }
-                
-                            
+
+
                         }
                     }
-            
-            
-        }
-        }
-        }
-        
-    
-    }
-        
 
+                    .owl-item.center {
+                        .card {
+                            background-color: #bf981b57;
+                            width: auto;
+                            transform: scale(1);
+                            transition: all 2s;
+
+                            h2 {
+                                color: #fff;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+
+                            p {
+                                color: #fff;
+                                text-align: center;
+                            }
+
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
 
     /*Seccion Estrategias Jefes*/
 
