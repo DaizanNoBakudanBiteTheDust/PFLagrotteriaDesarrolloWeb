@@ -1027,4 +1027,54 @@ section.contacto ul li a:hover i {
         color: #bf9823;
     }
 
+/*Pagina Contacto*/
+
+    section.contacto {
+        background: url(../img/imgNoticia2.png) no-repeat;
+        background-size: cover;
+        padding: 0px;
+    }
+
+    section.contacto .form-group {
+        padding: 10px 0px;
+    }
+
+    section.contacto .col-lg-6 p {
+        text-align: justify;
+        margin: 20px 0px;
+    }
+
+    section.contacto button {
+        width: 100%;
+        margin: 20px 0px;
+        border: 1px solid #fff;
+        background-color: #bf9823;
+        font-weight: 800;
+    }
+
+    section.contacto button:hover,
+    section.contacto button:active {
+        border: 1px solid #bf9823;
+        color: #bf9823;
+        background-color: transparent;
+    }
+
+    section.contacto ul {
+        padding: 0px;
+        margin-top: 60px;
+    }
+
+    section.contacto ul li {
+        float: left;
+        margin: 0px 20px;
+    }
+
+    section.contacto ul li a {
+        font-size: 4rem;
+    }
+
+    section.contacto ul li a:hover i {
+        color: #bf9823;
+    }
+
 }
