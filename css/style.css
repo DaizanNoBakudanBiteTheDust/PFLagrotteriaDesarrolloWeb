@@ -485,7 +485,8 @@ section.contacto ul li a:hover i {
     text-transform: uppercase;
     height: auto;
   }
-  header nav ul li.active a, header nav ul li:hover a {
+  header nav ul li.active a,
+  header nav ul li:hover a {
     color: #ffc107;
   }
   header nav ul li.active a {
@@ -567,7 +568,8 @@ section.contacto ul li a:hover i {
     border-bottom: 1px solid rgba(255, 193, 7, 0.2117647059);
     width: 100%;
   }
-  header nav ul li, header nav ul li a {
+  header nav ul li,
+  header nav ul li a {
     width: 100%;
   }
   header nav ul li {
@@ -690,7 +692,8 @@ section.contacto ul li a:hover i {
     background-color: #bf981b;
     font-weight: 800;
   }
-  section.plataformaJuego .card a :active, section.plataformaJuego .card a :hover {
+  section.plataformaJuego .card a :active,
+  section.plataformaJuego .card a :hover {
     border: 1px solid #bf981b;
     color: #bf981b;
     background-color: transparent;
@@ -730,14 +733,18 @@ section.contacto ul li a:hover i {
     height: 150px;
     font-size: 1.1rem;
   }
-  section.noticias .col-md-4 a, section.noticias .col-md-4 button {
+  section.noticias .col-md-4 a,
+  section.noticias .col-md-4 button {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
     background-color: #bf981b;
     font-weight: 800;
   }
-  section.noticias .col-md-4 a:active, section.noticias .col-md-4 a:hover, section.noticias .col-md-4 button:active, section.noticias .col-md-4 button:hover {
+  section.noticias .col-md-4 a:active,
+  section.noticias .col-md-4 a:hover,
+  section.noticias .col-md-4 button:active,
+  section.noticias .col-md-4 button:hover {
     border: 1px solid #bf981b;
     color: #bf981b;
     background-color: transparent;
@@ -761,15 +768,31 @@ section.contacto ul li a:hover i {
     margin-top: 55px;
   }
   /*Clases de Aventurero*/
-  section.claseAventureros .card {
-    background-color: #bf981b;
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item .card {
+    background-color: rgba(191, 152, 27, 0);
+    transform: scale(0.6);
   }
-  section.claseAventureros .card h2 {
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item .card h2 {
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
   }
-  section.claseAventureros .card p {
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item .card p {
+    color: #fff;
+    text-align: center;
+  }
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item.center .card {
+    background-color: rgba(191, 152, 27, 0.3411764706);
+    width: auto;
+    transform: scale(1);
+    transition: all 2s;
+  }
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item.center .card h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  section.claseAventureros .owl-carousel .owl-stage-outer .owl-stage .owl-item.center .card p {
     color: #fff;
     text-align: center;
   }
@@ -810,7 +833,8 @@ section.contacto ul li a:hover i {
     background-color: #bf981b;
     font-weight: 800;
   }
-  section.contacto button :hover, section.contacto button :active {
+  section.contacto button :hover,
+  section.contacto button :active {
     border: 1px solid #bf981b;
     color: #bf981b;
     background-color: transparent;
