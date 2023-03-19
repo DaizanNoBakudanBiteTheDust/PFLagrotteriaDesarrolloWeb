@@ -2,20 +2,22 @@
 
 //ESTILOS GENERALES DEL SITIO
 
+$font-Elden: "Mantinia";
+$font-general: "Open Sans";
+$color-primario: #bf981b;
+$color-secundario: #074845;
+
 * {
-    font-family: "Open Sans";
+    font-family: $font-general;
     margin: 0;
     padding: 0;
     color: #ffffff;
 
     @font-face {
-        font-family: "Mantinia";
+        font-family: $font-Elden;
         src: url("./fonts/mantiniaRegular.woff2");
     }
 }
-
-$color-primario: #bf981b;
-$color-secundario: #074845;
 
 header,
 header li,
@@ -23,8 +25,8 @@ header ul,
 h1,
 h2,
 h3,
-header a {
-    font-family: "Mantinia";
+header a{
+    font-family: $font-Elden;
 }
 
 h1,
@@ -172,8 +174,7 @@ section.detallesJuego {
     background-attachment: fixed;
 
 
-    ul,
-    .plataformaJuego ul {
+    ul{
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -209,10 +210,31 @@ section.detallesJuego {
     }
 }
 
-.plataformaJuego {
-    padding: 10px;
-    overflow: hidden;
+/* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
+
+div.stickyFingers{
+    top: 857px;
+    right: 40px;
+    float: right;
+    width: auto;
+    position: sticky;
+    display: initial;
+    z-index: 1;
+
+    a.comprarSticky {
+        text-align: center;
+        color: #FFF;
+        background-color: $color-primario;
+        border-radius: 6px;
+        padding: 4px;
+        
+        i {
+            font-size: 32px;
+        }
+    }
 }
+
+/*Plataforma de Juego */
 
 section.plataformaJuego {
     padding: 10px;
@@ -300,29 +322,6 @@ section.plataformaJuego {
             font-weight: 900;
             height: 50px;
             text-align: center;
-        }
-    }
-
-    /* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
-    .stickyFingers {
-        top: 857px;
-        right: 40px;
-        float: right;
-        width: auto;
-        position: sticky;
-        display: initial;
-        z-index: 1000000;
-
-        .comprarSticky {
-            text-align: center;
-            color: #FFF;
-            background-color: $color-primario;
-            border-radius: 6px;
-            padding: 4px;
-
-            i {
-                font-size: 32px;
-            }
         }
     }
 
@@ -444,7 +443,7 @@ section.jefes{
     button.accordion-button {
         color: #ffc107;
         background-color: #3c3930;
-        font-family: "Mantinia";
+        font-family: $font-Elden;
         text-transform: uppercase;
     }
 }
@@ -830,7 +829,7 @@ section.plataformaJuego {
         flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
-        background: url(../img/eldenRingFondo.jpg) no-repeat;
+        background: $elden-ring-fondo;
         a {
             width: 100%;
             margin: 20px 0px;

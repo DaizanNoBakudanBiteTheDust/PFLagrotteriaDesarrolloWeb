@@ -136,20 +136,17 @@ section.detallesJuego {
   background-size: cover;
   background-attachment: fixed;
 }
-section.detallesJuego ul,
-section.detallesJuego .plataformaJuego ul {
+section.detallesJuego ul {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   padding: 0;
 }
-section.detallesJuego ul li,
-section.detallesJuego .plataformaJuego ul li {
+section.detallesJuego ul li {
   margin: 0 5px;
 }
-section.detallesJuego ul li span,
-section.detallesJuego .plataformaJuego ul li span {
+section.detallesJuego ul li span {
   color: #bf981b;
   text-transform: uppercase;
   font-weight: bold;
@@ -169,15 +166,31 @@ section.detallesJuego p {
   margin-bottom: 30px;
 }
 
-.plataformaJuego {
-  padding: 10px;
-  overflow: hidden;
+/* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
+div.stickyFingers {
+  top: 857px;
+  right: 40px;
+  float: right;
+  width: auto;
+  position: sticky;
+  display: initial;
+  z-index: 1;
+}
+div.stickyFingers a.comprarSticky {
+  text-align: center;
+  color: #FFF;
+  background-color: #bf981b;
+  border-radius: 6px;
+  padding: 4px;
+}
+div.stickyFingers a.comprarSticky i {
+  font-size: 32px;
 }
 
+/*Plataforma de Juego */
 section.plataformaJuego {
   padding: 10px;
   overflow: hidden;
-  /* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
 }
 section.plataformaJuego .row:first-child {
   width: 100%;
@@ -251,25 +264,6 @@ section.plataformaJuego .card h4 {
   font-weight: 900;
   height: 50px;
   text-align: center;
-}
-section.plataformaJuego .stickyFingers {
-  top: 857px;
-  right: 40px;
-  float: right;
-  width: auto;
-  position: sticky;
-  display: initial;
-  z-index: 1000000;
-}
-section.plataformaJuego .stickyFingers .comprarSticky {
-  text-align: center;
-  color: #FFF;
-  background-color: #bf981b;
-  border-radius: 6px;
-  padding: 4px;
-}
-section.plataformaJuego .stickyFingers .comprarSticky i {
-  font-size: 32px;
 }
 
 /*Seccion Noticias*/
@@ -558,7 +552,7 @@ section.contacto ul li a:hover i {
     display: block;
     text-align: center;
     font-size: 0.8rem;
-    color: #bf9823;
+    color: #bf981b;
   }
   header ul li.logo a img {
     height: auto;
@@ -740,16 +734,16 @@ section.contacto ul li a:hover i {
     width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
-    background-color: #bf9823;
+    background-color: #bf981b;
     font-weight: 800;
   }
   section.noticias .col-md-4 a:active, section.noticias .col-md-4 a:hover, section.noticias .col-md-4 button:active, section.noticias .col-md-4 button:hover {
-    border: 1px solid #bf9823;
-    color: #bf9823;
+    border: 1px solid #bf981b;
+    color: #bf981b;
     background-color: transparent;
   }
   section.noticias .modal h5 {
-    color: #bf9823;
+    color: #bf981b;
   }
   section.noticias .modal p {
     color: #000;
@@ -833,7 +827,7 @@ section.contacto ul li a:hover i {
     font-size: 4rem;
   }
   section.contacto ul a :hover i {
-    color: #bf9823;
+    color: #bf981b;
   }
   /*Cierra el media query desktop*/
 }
