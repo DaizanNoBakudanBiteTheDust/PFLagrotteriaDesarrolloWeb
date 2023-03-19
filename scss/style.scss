@@ -685,7 +685,7 @@ section.jefes{
                 display: block;
                 text-align: center;
                 font-size: 0.8rem;
-                color: #bf9823;
+                color: $color-primario;
                 img {
                     height: auto;
                     width: 85px;
@@ -887,18 +887,18 @@ section.noticias {
             width: 100%;
     margin: 20px 0px;
     border: 1px solid #fff;
-    background-color: #bf9823;
+    background-color: $color-primario;
     font-weight: 800;
         }
         a:active, a:hover, button:active, button:hover{
-            border: 1px solid #bf9823;
-    color: #bf9823;
+            border: 1px solid $color-primario;
+    color: $color-primario;
     background-color: transparent;
         }
     }
     .modal{
         h5 {
-            color: #bf9823;
+            color: $color-primario;
         }
         p {
             color: #000;
@@ -1006,7 +1006,7 @@ section.contacto {
             :hover{
                 i{
                 
-                        color: #bf9823;
+                        color: $color-primario;
                  
                 }
             }
