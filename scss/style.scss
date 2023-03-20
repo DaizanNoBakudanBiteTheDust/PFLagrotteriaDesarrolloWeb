@@ -454,8 +454,16 @@ section.jefes {
 /*Juegos Similares*/
 
 section.juegosSimilares {
+    .row{
+    .scrollPagina {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+    }
     img {
         width: 100%;
+        padding: 5px;
     }
 
     h2 {
@@ -468,7 +476,7 @@ section.juegosSimilares {
         font-size: 1.2rem;
         text-transform: uppercase;
     }
-
+}
 }
 
 /*Pagina Contacto*/
@@ -631,8 +639,9 @@ $desktop: 992px;
                 }
             }
             .navbar-collapse {
-                height: auto;
+                height: 150px;
             }
+            
         }
 
         
@@ -670,6 +679,19 @@ $desktop: 992px;
             flex-direction: row;
         }
     }
+
+    /*Juegos Similares*/
+section.juegosSimilares{
+    .row{
+    .scrollPagina {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        justify-content: space-between;
+        }
+    }
+    }
+
 
 
     /*Cierra el Media query*/
@@ -1064,6 +1086,14 @@ $desktop: 992px;
     section.juegosSimilares {
         .row{
             justify-content: space-between;
+            .scrollPagina {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            justify-content: space-between;
+            }
+            
+            
             img {
                 width: 100%;
             }

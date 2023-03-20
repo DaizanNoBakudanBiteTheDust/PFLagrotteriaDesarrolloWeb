@@ -369,14 +369,21 @@ section.jefes button.accordion-button {
 }
 
 /*Juegos Similares*/
-section.juegosSimilares img {
-  width: 100%;
+section.juegosSimilares .row .scrollPagina {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  justify-content: flex-start;
 }
-section.juegosSimilares h2 {
+section.juegosSimilares .row img {
+  width: 100%;
+  padding: 5px;
+}
+section.juegosSimilares .row h2 {
   margin: 40px 20px;
   font-size: 1.5rem;
 }
-section.juegosSimilares h3 {
+section.juegosSimilares .row h3 {
   text-align: center;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -498,7 +505,7 @@ section.contacto ul li a:hover i {
     background-color: #3c3930;
   }
   header nav .navbar-collapse {
-    height: auto;
+    height: 150px;
   }
   /* Detalles Juego Index */
   section.detallesJuego p {
@@ -518,6 +525,13 @@ section.contacto ul li a:hover i {
   /*Jefes */
   section.jefes .accordion-body {
     flex-direction: row;
+  }
+  /*Juegos Similares*/
+  section.juegosSimilares .row .scrollPagina {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: space-between;
   }
   /*Cierra el Media query*/
 }
@@ -801,6 +815,12 @@ section.contacto ul li a:hover i {
   }
   /*Seccion Juegos Similares*/
   section.juegosSimilares .row {
+    justify-content: space-between;
+  }
+  section.juegosSimilares .row .scrollPagina {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
     justify-content: space-between;
   }
   section.juegosSimilares .row img {
