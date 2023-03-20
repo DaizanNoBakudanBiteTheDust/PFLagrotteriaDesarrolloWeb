@@ -1,0 +1,24 @@
+section.jefes {
+    .accordion-body {
+        background-color: #000;
+        border-color: #fff;
+        display: flex;
+        flex-direction: column-reverse;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    button.accordion-button {
+        color: #ffc107;
+        background-color: #3c3930;
+        font-family: $font-Elden;
+        text-transform: uppercase;
+    }
+}
+
+
+.accordion-item {
+    border: none;
+}

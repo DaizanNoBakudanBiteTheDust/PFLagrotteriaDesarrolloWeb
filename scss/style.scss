@@ -105,7 +105,7 @@ header {
 
     nav { 
         .navbar-collapse{
-            height: 180px;
+            height: 200px;
             transition: all 1s;
             ul {
                 display: flex;
@@ -151,247 +151,7 @@ header {
 }
 
 
-//video debajo del Header
-
-.videoSinAudio,
-.videoSinAudio video,
-.videoSinAudio video source {
-    height: auto;
-    width: 100%;
-}
-
-.videoSinAudio {
-    padding: 0px;
-}
-
-//SECCION DETALLES DEL JUEGO
-
-$elden-ring-fondo: url(../img/eldenRingFondo.jpg) no-repeat;
-
-section.detallesJuego {
-    padding: 30px 20px;
-    background: $elden-ring-fondo;
-    background-size: cover;
-    background-attachment: fixed;
-
-
-    ul {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-
-        li {
-            margin: 0 5px;
-
-            span {
-                color: #bf981b;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-        }
-    }
-
-    iframe {
-        width: 100%;
-        height: 35vh;
-        margin-top: 10px;
-    }
-
-    h2 {
-        margin: 30px 0px 20px;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-
-    p {
-        text-align: justify;
-        margin-bottom: 30px;
-    }
-}
-
-/* clase referencia a Bruno Bucciaratti de JOJO por el sticky...*/
-
-div.stickyFingers {
-    top: 857px;
-    right: 40px;
-    float: right;
-    width: auto;
-    position: sticky;
-    display: initial;
-    z-index: 1;
-
-    a.comprarSticky {
-        text-align: center;
-        color: #FFF;
-        background-color: $color-primario;
-        border-radius: 6px;
-        padding: 4px;
-
-        i {
-            font-size: 32px;
-        }
-    }
-}
-
-/*Plataforma de Juego */
-
-section.plataformaJuego {
-    padding: 10px;
-    overflow: hidden;
-
-    .row:first-child {
-        width: 100%;
-    }
-
-    h2 {
-        padding: 2rem 0;
-    }
-
-    ul {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        display: flex;
-        flex-direction: row;
-        margin-left: -10px;
-        overflow: scroll;
-        width: 97vw;
-
-        /* Hide scrollbar for Chrome, Safari and Opera */
-        &::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* Hide scrollbar for IE, Edge and Firefox */
-        & {
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
-        }
-    }
-
-    ul li {
-        border: 1px solid $color-primario;
-        border-radius: 5%;
-        text-align: center;
-        padding: 0.5rem;
-        background: $color-secundario;
-        height: 60px;
-        display: flex;
-
-        a {
-            padding: 10px;
-            color: #fff;
-            width: 150px;
-        }
-    }
-
-    .scrollPagina {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: scroll;
-        justify-content: flex-start;
-    }
-
-    .card {
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-        background: $elden-ring-fondo;
-        margin-right: 15px;
-
-        a {
-            width: 100%;
-            margin: 20px 0px;
-            border: 1px solid #fff;
-            background-color: $color-primario;
-            font-weight: 800;
-        }
-
-        a:active,
-        a:hover {
-            border: 1px solid $color-primario;
-            color: $color-primario;
-            background-color: transparent;
-        }
-
-        h4 {
-            color: $color-primario;
-            font-size: 1.2rem;
-            font-weight: 900;
-            height: 50px;
-            text-align: center;
-        }
-    }
-
-}
-
-/*Seccion Noticias*/
-
-
-$noticias-background: url(../img/eldenLordSaturado.jpeg) no-repeat;
-
-section.noticias {
-    background: $noticias-background;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0px;
-
-    h3 {
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-        text-align: center;
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
-        margin: 30px 0px;
-    }
-
-    a,
-    button {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: $color-primario;
-        font-weight: 800;
-    }
-
-    a:active,
-    a:hover,
-    button:active,
-    button:hover {
-        border: 1px solid $color-primario;
-        ;
-        color: $color-primario;
-        background-color: transparent;
-    }
-}
-
-.fondoNegro {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
-    padding: 40px 20px;
-}
-
-.modal h5 {
-    color: $color-primario;
-}
-
-.modal p {
-    color: #000;
-}
+@import "./partials/index";
 
 /* FOOTER */
 
@@ -412,138 +172,26 @@ footer {
 
 /*Clases de Aventurero*/
 
-section.claseAventureros {
-    .card {
-        background-color: $color-primario;
-    }
-
-    .card h2 {
-        color: #fff;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    .card p {
-        color: #fff;
-        text-align: center;
-    }
-}
+@import "./partials/clases";
 
 /*Seccion Estrategias Jefes*/
 
+@import "./partials/jefes";
 
-section.jefes {
-    .accordion-body {
-        background-color: #000;
-        border-color: #fff;
-        display: flex;
-        flex-direction: column-reverse;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    button.accordion-button {
-        color: #ffc107;
-        background-color: #3c3930;
-        font-family: $font-Elden;
-        text-transform: uppercase;
-    }
-}
-
-
-.accordion-item {
-    border: none;
-}
 
 /*Juegos Similares*/
 
-section.juegosSimilares {
-    .row{
-    .scrollPagina {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: scroll;
-        justify-content: flex-start;
-    }
-    img {
-        width: 100%;
-        padding: 5px;
-    }
-
-    h2 {
-        margin: 40px 20px;
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        text-align: center;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-}
-}
+@import "./partials/juegosSimilares";
 
 /*Pagina Contacto*/
 
 $background-contacto: url(../img/imgNoticia2.png) no-repeat;
 
 
-section.contacto {
-    background: $background-contacto;
-    background-size: cover;
-    padding: 0px;
-
-    .form-group {
-        padding: 10px 0px;
-    }
-
-    .col-lg-6 {
-        p {
-            text-align: justify;
-            margin: 20px 0px;
-        }
-    }
-
-    button {
-        width: 100%;
-        margin: 20px 0px;
-        border: 1px solid #fff;
-        background-color: $color-primario;
-        font-weight: 800;
-    }
-
-    button:hover,
-    button:active {
-        border: 1px solid $color-primario;
-        color: $color-primario;
-        background-color: transparent;
-    }
-
-    ul {
-        padding: 0px;
-        margin-top: 60px;
-
-        li {
-            float: left;
-            margin: 0px 20px;
-
-            a {
-                font-size: 4rem;
-            }
-
-            a:hover {
-                i {
-                    color: $color-primario;
-                }
-            }
-        }
-    }
-}
+@import "./partials/contacto";
 
 
-/*EMPIEZAN LOS MEDIAQUERIES */
+/*EMPIEZAN LOS MEDIAQUERIES Definiendo las variables */
 
 $tablet: 768px;
 $desktop: 992px;
@@ -705,8 +353,6 @@ section.juegosSimilares{
 
 
 @media (min-width: $desktop) {
-
-
 
     header {
 

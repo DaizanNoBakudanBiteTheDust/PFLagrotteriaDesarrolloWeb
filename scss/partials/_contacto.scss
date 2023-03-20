@@ -1,0 +1,52 @@
+
+section.contacto {
+    background: $background-contacto;
+    background-size: cover;
+    padding: 0px;
+
+    .form-group {
+        padding: 10px 0px;
+    }
+
+    .col-lg-6 {
+        p {
+            text-align: justify;
+            margin: 20px 0px;
+        }
+    }
+
+    button {
+        width: 100%;
+        margin: 20px 0px;
+        border: 1px solid #fff;
+        background-color: $color-primario;
+        font-weight: 800;
+    }
+
+    button:hover,
+    button:active {
+        border: 1px solid $color-primario;
+        color: $color-primario;
+        background-color: transparent;
+    }
+
+    ul {
+        padding: 0px;
+        margin-top: 60px;
+
+        li {
+            float: left;
+            margin: 0px 20px;
+
+            a {
+                font-size: 4rem;
+            }
+
+            a:hover {
+                i {
+                    color: $color-primario;
+                }
+            }
+        }
+    }
+}

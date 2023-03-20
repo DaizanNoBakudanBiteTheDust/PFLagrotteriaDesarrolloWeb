@@ -81,7 +81,7 @@ header ul li.logo a img {
   width: 85px;
 }
 header nav .navbar-collapse {
-  height: 180px;
+  height: 200px;
   transition: all 1s;
 }
 header nav .navbar-collapse ul {
@@ -434,7 +434,7 @@ section.contacto ul li a:hover i {
   color: #bf981b;
 }
 
-/*EMPIEZAN LOS MEDIAQUERIES */
+/*EMPIEZAN LOS MEDIAQUERIES Definiendo las variables */
 /*VISTA DE TABLET */
 @media (min-width: 768px) {
   /*Redes Sociales del Header*/
