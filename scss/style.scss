@@ -103,45 +103,39 @@ header {
         }
     }
 
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        height: 5vh;
-
-        li,
-        li a {
-            width: 100%;
-        }
-
-        li {
-            list-style: none;
-            display: flex;
-
-            a {
-                text-align: center;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffffff;
-                font-size: 0.8rem;
-                text-transform: uppercase;
+    nav { 
+        .navbar-collapse{
+            height: 160px;
+            transition: all 1s;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
                 height: 5vh;
-                border-bottom: 1px solid;
-
-                &:hover,
-                &.active {
-                    color: #ffc107;
-                    background-color: #3c3930;
+                li {
+                    list-style: none;
+                    display: flex;
+                    width: 100%;
+                    a {
+                        text-align: center;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        height: 5vh;
+                        border-bottom: 1px solid;
+                        width: 100%;
+                        .active {
+                            color: #ffc107;
+                            background-color: #3c3930;
+                        }
+                    }
                 }
             }
         }
-
-        .navbar-collapse {
-            height: 205px;
-        }
-
-        .navbar button {
+        button {
             position: absolute;
             right: 45px;
             top: -60px;
@@ -149,6 +143,7 @@ header {
         }
     }
 }
+
 
 //video debajo del Header
 
@@ -635,11 +630,12 @@ $desktop: 992px;
                     background-color: #3c3930;
                 }
             }
+            .navbar-collapse {
+                height: auto;
+            }
         }
 
-        .navbar-collapse {
-            height: auto;
-        }
+        
     }
 
     /* Detalles Juego Index */
@@ -775,11 +771,12 @@ $desktop: 992px;
                 }
             }
 
+            .navbar-collapse {
+                height: auto;
+            }
         }
 
-        .navbar-collapse {
-            height: auto;
-        }
+        
 
         /*CIERRA EL HEADER*/
 

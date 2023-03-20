@@ -80,21 +80,22 @@ header ul li.logo a img {
   height: auto;
   width: 85px;
 }
-header nav ul {
+header nav .navbar-collapse {
+  height: 160px;
+  transition: all 1s;
+}
+header nav .navbar-collapse ul {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   height: 5vh;
 }
-header nav ul li,
-header nav ul li a {
-  width: 100%;
-}
-header nav ul li {
+header nav .navbar-collapse ul li {
   list-style: none;
   display: flex;
+  width: 100%;
 }
-header nav ul li a {
+header nav .navbar-collapse ul li a {
   text-align: center;
   display: inline-flex;
   align-items: center;
@@ -104,15 +105,13 @@ header nav ul li a {
   text-transform: uppercase;
   height: 5vh;
   border-bottom: 1px solid;
+  width: 100%;
 }
-header nav ul li a:hover, header nav ul li a.active {
+header nav .navbar-collapse ul li a .active {
   color: #ffc107;
   background-color: #3c3930;
 }
-header nav ul .navbar-collapse {
-  height: 205px;
-}
-header nav ul .navbar button {
+header nav button {
   position: absolute;
   right: 45px;
   top: -60px;
@@ -498,7 +497,7 @@ section.contacto ul li a:hover i {
   header nav ul li:hover {
     background-color: #3c3930;
   }
-  header .navbar-collapse {
+  header nav .navbar-collapse {
     height: auto;
   }
   /* Detalles Juego Index */
@@ -596,7 +595,7 @@ section.contacto ul li a:hover i {
     color: #ffc107;
     background-color: #3c3930;
   }
-  header .navbar-collapse {
+  header nav .navbar-collapse {
     height: auto;
   }
   /*video debajo del Header*/
