@@ -105,7 +105,7 @@ header {
 
     nav { 
         .navbar-collapse{
-            height: 160px;
+            height: 180px;
             transition: all 1s;
             ul {
                 display: flex;
@@ -131,6 +131,12 @@ header {
                             color: #ffc107;
                             background-color: #3c3930;
                         }
+                    }
+                }
+                li.active,
+                li:hover {
+                    a {
+                        color: #ffc107;
                     }
                 }
             }

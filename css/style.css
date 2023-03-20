@@ -81,7 +81,7 @@ header ul li.logo a img {
   width: 85px;
 }
 header nav .navbar-collapse {
-  height: 160px;
+  height: 180px;
   transition: all 1s;
 }
 header nav .navbar-collapse ul {
@@ -110,6 +110,10 @@ header nav .navbar-collapse ul li a {
 header nav .navbar-collapse ul li a .active {
   color: #ffc107;
   background-color: #3c3930;
+}
+header nav .navbar-collapse ul li.active a,
+header nav .navbar-collapse ul li:hover a {
+  color: #ffc107;
 }
 header nav button {
   position: absolute;
