@@ -1062,19 +1062,22 @@ $desktop: 992px;
     /*Seccion Juegos Similares*/
 
     section.juegosSimilares {
-        img {
-            width: 100%;
-        }
-
-        h2 {
-            margin: 40px 20px;
-            font-size: 1.5rem;
-        }
-
-        h3 {
-            text-align: center;
-            font-size: 1.2rem;
-            text-transform: uppercase;
+        .row{
+            justify-content: space-between;
+            img {
+                width: 100%;
+            }
+    
+            h2 {
+                margin: 40px 20px;
+                font-size: 1.5rem;
+            }
+    
+            h3 {
+                text-align: center;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
         }
     }
 

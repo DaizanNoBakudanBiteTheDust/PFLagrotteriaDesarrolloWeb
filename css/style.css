@@ -800,14 +800,17 @@ section.contacto ul li a:hover i {
     flex-direction: row;
   }
   /*Seccion Juegos Similares*/
-  section.juegosSimilares img {
+  section.juegosSimilares .row {
+    justify-content: space-between;
+  }
+  section.juegosSimilares .row img {
     width: 100%;
   }
-  section.juegosSimilares h2 {
+  section.juegosSimilares .row h2 {
     margin: 40px 20px;
     font-size: 1.5rem;
   }
-  section.juegosSimilares h3 {
+  section.juegosSimilares .row h3 {
     text-align: center;
     font-size: 1.2rem;
     text-transform: uppercase;
