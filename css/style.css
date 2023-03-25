@@ -816,6 +816,16 @@ section.contacto ul li a:hover i {
   section.jefes .accordion-body {
     flex-direction: row;
   }
+  section.jefes .accordion-body p {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+  }
+  section.jefes .accordion-body p span {
+    font-size: 2.5rem;
+    font-family: "Mantinia";
+    color: #bf981b;
+  }
   /*Seccion Juegos Similares*/
   section.juegosSimilares .row {
     justify-content: space-between;
