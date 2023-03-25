@@ -1,14 +1,10 @@
-* {
-  font-family: "Open Sans";
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
+/*Font Importada*/
 @font-face {
   font-family: "Mantinia";
   src: url("./fonts/mantiniaRegular.woff2");
 }
-
+/*Variables Globales */
+/*Media queries */
 header,
 header li,
 header ul,
@@ -323,7 +319,6 @@ section.noticias button:hover {
   color: #000;
 }
 
-/* FOOTER */
 footer {
   background-color: #0a2324;
   height: auto;
@@ -337,7 +332,6 @@ footer p {
   font-size: 0.8rem;
 }
 
-/*Clases de Aventurero*/
 section.claseAventureros .card {
   background-color: #bf981b;
 }
@@ -351,7 +345,6 @@ section.claseAventureros .card p {
   text-align: center;
 }
 
-/*Seccion Estrategias Jefes*/
 section.jefes .accordion-body {
   background-color: #000;
   border-color: #fff;
@@ -372,7 +365,6 @@ section.jefes button.accordion-button {
   border: none;
 }
 
-/*Juegos Similares*/
 section.juegosSimilares .row .scrollPagina {
   display: flex;
   flex-wrap: nowrap;
@@ -393,7 +385,6 @@ section.juegosSimilares .row h3 {
   text-transform: uppercase;
 }
 
-/*Pagina Contacto*/
 section.contacto {
   background: url(../img/imgNoticia2.png) no-repeat;
   background-size: cover;
@@ -434,8 +425,6 @@ section.contacto ul li a:hover i {
   color: #bf981b;
 }
 
-/*EMPIEZAN LOS MEDIAQUERIES Definiendo las variables */
-/*VISTA DE TABLET */
 @media (min-width: 768px) {
   /*Redes Sociales del Header*/
   header {
@@ -879,7 +868,16 @@ section.contacto ul li a:hover i {
   section.contacto ul a :hover i {
     color: #bf981b;
   }
-  /*Cierra el media query desktop*/
 }
+/*Pagina Index */
+/* FOOTER */
+/*Clases de Aventurero*/
+/*Seccion Estrategias Jefes*/
+/*Juegos Similares*/
+/*Pagina Contacto*/
+/*EMPIEZAN LOS MEDIAQUERIES Definiendo las variables */
+/*VISTA DE TABLET */
+/*Vista Desktop */
+/*Cierra el media query desktop*/
 
 /*# sourceMappingURL=style.css.map */

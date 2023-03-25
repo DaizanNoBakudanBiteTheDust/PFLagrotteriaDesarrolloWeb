@@ -1,3 +1,5 @@
+@use "./globales/variables" as var;
+
 section.jefes {
     .accordion-body {
         background-color: #000;
@@ -13,7 +15,7 @@ section.jefes {
     button.accordion-button {
         color: #ffc107;
         background-color: #3c3930;
-        font-family: $font-Elden;
+        font-family: var.$font-Elden;
         text-transform: uppercase;
     }
 }

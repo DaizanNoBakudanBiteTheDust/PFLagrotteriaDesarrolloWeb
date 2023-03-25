@@ -1,6 +1,7 @@
+@use "./globales/variables" as var;
 
 section.contacto {
-    background: $background-contacto;
+    background: var.$background-contacto;
     background-size: cover;
     padding: 0px;
 
@@ -19,14 +20,14 @@ section.contacto {
         width: 100%;
         margin: 20px 0px;
         border: 1px solid #fff;
-        background-color: $color-primario;
+        background-color: var.$color-primario;
         font-weight: 800;
     }
 
     button:hover,
     button:active {
-        border: 1px solid $color-primario;
-        color: $color-primario;
+        border: 1px solid var.$color-primario;
+        color: var.$color-primario;
         background-color: transparent;
     }
 
@@ -44,7 +45,7 @@ section.contacto {
 
             a:hover {
                 i {
-                    color: $color-primario;
+                    color: var.$color-primario;
                 }
             }
         }

@@ -1,0 +1,470 @@
+@use "./globales/variables" as var;
+
+@media (min-width: var.$desktop) {
+
+    header {
+
+        /*Redes Sociales del Header*/
+        ul.seccionRedes {
+            position: absolute;
+            display: flex;
+            right: 60px;
+            top: 40px;
+            width: 150px;
+
+            li.logoRed {
+                flex: auto;
+                font-size: 25px;
+            }
+
+            li.logoRed:hover {
+                a {
+                    i {
+                        color: #ffc107;
+                    }
+                }
+            }
+        }
+
+        /*logo del header */
+        ul {
+            li.logo {
+                width: 120px;
+                height: auto;
+                padding: 10px;
+                margin-left: 60px;
+
+                a {
+                    display: block;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    color: var.$color-primario;
+
+                    img {
+                        height: auto;
+                        width: 85px;
+                    }
+                }
+            }
+        }
+
+        /* Navbar */
+
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                height: 5vh;
+                border-top: 1px solid #ffc10736;
+                border-bottom: 1px solid #ffc10736;
+                width: 100%;
+
+                li,
+                li a {
+                    width: 100%;
+                }
+
+                li {
+                    list-style: none;
+                    display: flex;
+
+                    a {
+                        text-align: center;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        border-left: 1px solid #ffc10736;
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        height: auto;
+                    }
+                }
+
+                li.active,
+                li:hover {
+                    background-color: #3c3930;
+
+                    a {
+                        color: #ffc107;
+                        background-color: #3c3930;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                height: auto;
+            }
+        }
+
+
+
+        /*CIERRA EL HEADER*/
+
+    }
+
+    /*video debajo del Header*/
+
+    .videoSinAudio {
+        height: auto;
+        width: 100%;
+
+        video {
+            height: auto;
+            width: 100%;
+
+            source {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
+    /*SECCION DETALLES DEL JUEGO*/
+
+    section.detallesJuego {
+        padding: 60px 80px;
+
+        h2 {
+            text-align: left;
+            font-size: 1.6rem;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                margin: 0 10px;
+
+                span {
+                    color: var.$color-primario;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 55vh;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+    }
+
+    /* Plataforma de Juego */
+
+    section.plataformaJuego {
+        padding: 0px 20px 30px;
+        overflow: inherit;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            flex-direction: inherit;
+            margin-left: auto;
+            overflow: auto;
+            width: auto;
+
+            li {
+                margin: 0 10px;
+                border: 1px solid var.$color-primario;
+                border-radius: 8%;
+                text-align: center;
+                padding: 0.5rem;
+                background: var.$color-secundario;
+                height: auto;
+
+                a {
+                    padding: 10px;
+                    color: #fff;
+                }
+            }
+        }
+
+        h2 {
+            padding: 2rem 0;
+        }
+
+        .scrollPagina {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            justify-content: flex-start;
+        }
+
+        .card {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            background: var.$elden-ring-fondo;
+
+            a {
+                width: 100%;
+                margin: 20px 0px;
+                border: 1px solid #fff;
+                background-color: var.$color-primario;
+                font-weight: 800;
+
+                :active,
+                :hover {
+                    border: 1px solid var.$color-primario;
+                    color: var.$color-primario;
+                    background-color: transparent;
+                }
+            }
+
+            h4 {
+                color: var.$color-primario;
+                font-size: 1.2rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    /*Seccion Noticias*/
+
+    section.noticias {
+        background: url(../img/eldenLordSaturado.jpeg) no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 0px;
+
+        .fondoNegro {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+            padding: 60px 0px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            height: 7vh;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            max-height: 250px;
+            margin: 30px 0px;
+        }
+
+        .col-md-4 {
+            p {
+                height: 150px;
+                font-size: 1.1rem;
+            }
+
+            a,
+            button {
+                width: 100%;
+                margin: 20px 0px;
+                border: 1px solid #fff;
+                background-color: var.$color-primario;
+                font-weight: 800;
+            }
+
+            a:active,
+            a:hover,
+            button:active,
+            button:hover {
+                border: 1px solid var.$color-primario;
+                color: var.$color-primario;
+                background-color: transparent;
+            }
+        }
+
+        .modal {
+            h5 {
+                color: var.$color-primario;
+            }
+
+            p {
+                color: #000;
+            }
+        }
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+        background-color: #0a2324;
+        height: 16vh;
+
+        img {
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        p {
+            margin-top: 55px;
+        }
+    }
+
+    /*Clases de Aventurero*/
+
+    section.claseAventureros {
+        .owl-carousel {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        .card {
+                            background-color: #bf981b00;
+                            transform: scale(0.6);
+
+                            h2 {
+                                color: #fff;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+
+                            p {
+                                color: #fff;
+                                text-align: center;
+                            }
+
+
+                        }
+                    }
+
+                    .owl-item.center {
+                        .card {
+                            background-color: #bf981b57;
+                            width: auto;
+                            transform: scale(1);
+                            transition: all 2s;
+
+                            h2 {
+                                color: #fff;
+                                font-size: 1.2rem;
+                                text-align: center;
+                            }
+
+                            p {
+                                color: #fff;
+                                text-align: center;
+                            }
+
+
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+
+    /*Seccion Estrategias Jefes*/
+
+    section.jefes {
+        .accordion-body {
+            flex-direction: row;
+        }
+    }
+
+    /*Seccion Juegos Similares*/
+
+    section.juegosSimilares {
+        .row {
+            justify-content: space-between;
+
+            .scrollPagina {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                justify-content: space-between;
+            }
+
+
+            img {
+                width: 100%;
+            }
+
+            h2 {
+                margin: 40px 20px;
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                text-align: center;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    /*Pagina Contacto*/
+
+    section.contacto {
+        background: var.$background-contacto;
+        background-size: cover;
+        padding: 0px;
+
+        .form-group {
+            padding: 10px 0px;
+        }
+
+        .col-lg-6 {
+            p {
+                text-align: justify;
+                margin: 20px 0px;
+            }
+        }
+
+        button {
+            width: 100%;
+            margin: 20px 0px;
+            border: 1px solid #fff;
+            background-color: var.$color-primario;
+            font-weight: 800;
+
+            :hover,
+            :active {
+                border: 1px solid var.$color-primario;
+                color: var.$color-primario;
+                background-color: transparent;
+            }
+        }
+
+        ul {
+            padding: 0px;
+            margin-top: 60px;
+
+            li {
+                float: left;
+                margin: 0px 20px;
+            }
+
+            a {
+                font-size: 4rem;
+
+                :hover {
+                    i {
+
+                        color: var.$color-primario;
+
+                    }
+                }
+            }
+        }
+    }
+}

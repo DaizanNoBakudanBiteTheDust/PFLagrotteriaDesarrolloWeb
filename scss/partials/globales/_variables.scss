@@ -1,0 +1,18 @@
+/*Font Importada*/
+@font-face {
+    font-family: "Mantinia";
+    src: url("./fonts/mantiniaRegular.woff2");
+}
+
+/*Variables Globales */
+
+$font-Elden: "Mantinia";
+$font-general: "Open Sans";
+$color-primario: #bf981b;
+$color-secundario: #074845;
+$background-contacto: url(../img/imgNoticia2.png) no-repeat;
+$elden-ring-fondo: url(../img/eldenRingFondo.jpg) no-repeat;
+
+/*Media queries */
+$tablet: 768px;
+$desktop: 992px;

@@ -1,3 +1,5 @@
+@use "./globales/variables" as var;
+
 //video debajo del Header
 
 .videoSinAudio,
@@ -13,11 +15,10 @@
 
 //SECCION DETALLES DEL JUEGO
 
-$elden-ring-fondo: url(../img/eldenRingFondo.jpg) no-repeat;
 
 section.detallesJuego {
     padding: 30px 20px;
-    background: $elden-ring-fondo;
+    background: var.$elden-ring-fondo;
     background-size: cover;
     background-attachment: fixed;
 
@@ -72,7 +73,7 @@ div.stickyFingers {
     a.comprarSticky {
         text-align: center;
         color: #FFF;
-        background-color: $color-primario;
+        background-color: var.$color-primario;
         border-radius: 6px;
         padding: 4px;
 
@@ -120,11 +121,11 @@ section.plataformaJuego {
     }
 
     ul li {
-        border: 1px solid $color-primario;
+        border: 1px solid var.$color-primario;
         border-radius: 5%;
         text-align: center;
         padding: 0.5rem;
-        background: $color-secundario;
+        background: var.$color-secundario;
         height: 60px;
         display: flex;
 
@@ -146,26 +147,26 @@ section.plataformaJuego {
         flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
-        background: $elden-ring-fondo;
+        background: var.$elden-ring-fondo;
         margin-right: 15px;
 
         a {
             width: 100%;
             margin: 20px 0px;
             border: 1px solid #fff;
-            background-color: $color-primario;
+            background-color: var.$color-primario;
             font-weight: 800;
         }
 
         a:active,
         a:hover {
-            border: 1px solid $color-primario;
-            color: $color-primario;
+            border: 1px solid var.$color-primario;
+            color: var.$color-primario;
             background-color: transparent;
         }
 
         h4 {
-            color: $color-primario;
+            color: var.$color-primario;
             font-size: 1.2rem;
             font-weight: 900;
             height: 50px;
@@ -211,7 +212,7 @@ section.noticias {
         width: 100%;
         margin: 20px 0px;
         border: 1px solid #fff;
-        background-color: $color-primario;
+        background-color: var.$color-primario;
         font-weight: 800;
     }
 
@@ -219,9 +220,9 @@ section.noticias {
     a:hover,
     button:active,
     button:hover {
-        border: 1px solid $color-primario;
+        border: 1px solid var.$color-primario;
         ;
-        color: $color-primario;
+        color: var.$color-primario;
         background-color: transparent;
     }
 }
@@ -233,7 +234,7 @@ section.noticias {
 }
 
 .modal h5 {
-    color: $color-primario;
+    color: var.$color-primario;
 }
 
 .modal p {

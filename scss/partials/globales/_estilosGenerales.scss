@@ -1,0 +1,39 @@
+@use "./variables" as var;
+
+header,
+header li,
+header ul,
+h1,
+h2,
+h3,
+header a {
+    font-family: var.$font-Elden;
+}
+
+h1,
+h2,
+h3 {
+    color: var.$color-primario;
+}
+
+body {
+    background-color: #000;
+    height: auto;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    section {
+        position: relative;
+        padding: 60px 0px;
+    }
+}

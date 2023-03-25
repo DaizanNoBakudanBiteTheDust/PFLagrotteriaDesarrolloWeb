@@ -1,6 +1,8 @@
+@use "./globales/variables" as var;
+
 section.claseAventureros {
     .card {
-        background-color: $color-primario;
+        background-color: var.$color-primario;
     }
 
     .card h2 {

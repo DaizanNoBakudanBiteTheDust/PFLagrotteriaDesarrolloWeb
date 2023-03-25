@@ -1,0 +1,92 @@
+@use "./globales/variables" as var;
+
+header {
+    height: auto;
+
+    ul {
+        padding: 0px;
+        margin-bottom: 0px;
+
+        &.seccionRedes {
+            position: absolute;
+            display: flex;
+            right: 60px;
+            top: 40px;
+            width: 150px;
+
+            li.logoRed {
+                flex: auto;
+                font-size: 25px;
+
+                &:hover a i {
+                    color: #ffc107;
+                }
+            }
+        }
+
+        li.logo {
+            width: 120px;
+            height: auto;
+            padding: 0px;
+            margin-left: 10px;
+
+            a {
+                display: block;
+                text-align: center;
+                font-size: 0.8rem;
+                color: var.$color-primario;
+
+                img {
+                    height: auto;
+                    width: 85px;
+                }
+            }
+        }
+    }
+
+    nav { 
+        .navbar-collapse{
+            height: 200px;
+            transition: all 1s;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                height: 5vh;
+                li {
+                    list-style: none;
+                    display: flex;
+                    width: 100%;
+                    a {
+                        text-align: center;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: #ffffff;
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        height: 5vh;
+                        border-bottom: 1px solid;
+                        width: 100%;
+                        .active {
+                            color: #ffc107;
+                            background-color: #3c3930;
+                        }
+                    }
+                }
+                li.active,
+                li:hover {
+                    a {
+                        color: #ffc107;
+                    }
+                }
+            }
+        }
+        button {
+            position: absolute;
+            right: 45px;
+            top: -60px;
+            border: 1px solid rgb(255, 255, 255);
+        }
+    }
+}
