@@ -10,6 +10,14 @@ section.jefes {
         img {
             width: 100%;
         }
+        p{
+            font-size: 20px;
+            span{
+                font-size: 2rem;
+                font-family: var.$font-Elden;
+                color: $color-primario;
+            }
+        }
     }
 
     button.accordion-button {
