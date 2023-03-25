@@ -12,7 +12,7 @@ En ese momento me encontraba jugando Demon souls y pensando "ahh que lindo seria
 
 -Css3
 
--Sass (a futuro se agregara SASS) (even though I don't like it)
+-Sass
 
-Si, se ingles.
+-Jquery
 
