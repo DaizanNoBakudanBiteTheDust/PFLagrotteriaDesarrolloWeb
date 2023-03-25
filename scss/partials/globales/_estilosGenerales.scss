@@ -1,5 +1,14 @@
 @use "./variables" as var;
 
+
+
+* {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
 header,
 header li,
 header ul,

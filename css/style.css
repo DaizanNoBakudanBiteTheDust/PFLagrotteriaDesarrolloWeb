@@ -5,6 +5,13 @@
 }
 /*Variables Globales */
 /*Media queries */
+* {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
 header,
 header li,
 header ul,
@@ -56,6 +63,9 @@ header ul.seccionRedes {
 header ul.seccionRedes li.logoRed {
   flex: auto;
   font-size: 25px;
+}
+header ul.seccionRedes li.logoRed a {
+  color: #ffffff;
 }
 header ul.seccionRedes li.logoRed:hover a i {
   color: #ffc107;

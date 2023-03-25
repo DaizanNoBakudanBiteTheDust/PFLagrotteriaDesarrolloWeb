@@ -17,6 +17,9 @@ header {
             li.logoRed {
                 flex: auto;
                 font-size: 25px;
+                a{
+                    color: #ffffff;
+                }
 
                 &:hover a i {
                     color: #ffc107;
