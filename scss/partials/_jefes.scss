@@ -30,7 +30,7 @@ section.jefes {
             }
             .accordion-button::after{
                 transition: transform .2s ease-in-out;;
-
+                background-image: var.$accordion-button-icon;
             }
             button.accordion-button::after:not(.collapsed){
                 background-image: var.$accordion-button-active-icon;
