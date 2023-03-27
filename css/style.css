@@ -355,24 +355,36 @@ section.claseAventureros .card p {
   text-align: center;
 }
 
-section.jefes .accordion-body {
+section.jefes .accordion .accordion-item {
+  border: none;
+}
+section.jefes .accordion .accordion-item .accordion-collapse {
+  transition: all 1.4s ease 0s;
+}
+section.jefes .accordion .accordion-item .accordion-collapse .accordion-body {
   background-color: #000;
   border-color: #fff;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
-section.jefes .accordion-body img {
+section.jefes .accordion .accordion-item .accordion-collapse .accordion-body img {
   width: 100%;
 }
-section.jefes button.accordion-button {
+section.jefes .accordion .accordion-item button.accordion-button {
   color: #ffc107;
   background-color: #3c3930;
   font-family: "Mantinia";
   text-transform: uppercase;
 }
+section.jefes .accordion .accordion-item .accordion-button::after {
+  transition: transform 0.2s ease-in-out;
+}
+section.jefes .accordion .accordion-item button.accordion-button::after:not(.collapsed) {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#bf981b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
 
-.accordion-item {
-  border: none;
+.collapsed .bi-chevron-down {
+  color: #fff;
 }
 
 section.juegosSimilares .row .scrollPagina {
@@ -591,6 +603,7 @@ section.contacto ul li a:hover i {
   header nav ul li {
     list-style: none;
     display: flex;
+    transition: all 0.5s ease-in-out;
   }
   header nav ul li a {
     text-align: center;
@@ -606,6 +619,7 @@ section.contacto ul li a:hover i {
   header nav ul li.active,
   header nav ul li:hover {
     background-color: #3c3930;
+    transform: scale(1, 1.2);
   }
   header nav ul li.active a,
   header nav ul li:hover a {

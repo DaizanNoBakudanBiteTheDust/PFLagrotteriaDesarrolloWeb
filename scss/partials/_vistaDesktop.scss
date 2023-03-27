@@ -68,7 +68,7 @@
                 li {
                     list-style: none;
                     display: flex;
-
+                    transition: all .5s ease-in-out;
                     a {
                         text-align: center;
                         display: inline-flex;
@@ -85,7 +85,7 @@
                 li.active,
                 li:hover {
                     background-color: #3c3930;
-
+                    transform: scale(1, 1.2);
                     a {
                         color: #ffc107;
                         background-color: #3c3930;

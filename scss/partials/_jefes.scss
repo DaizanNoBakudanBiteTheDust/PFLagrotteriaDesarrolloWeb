@@ -1,26 +1,49 @@
 @use "./globales/variables" as var;
 
 section.jefes {
-    .accordion-body {
-        background-color: #000;
-        border-color: #fff;
-        display: flex;
-        flex-direction: column-reverse;
 
-        img {
-            width: 100%;
+    .accordion{
+
+        .accordion-item {
+            border: none;
+            .accordion-collapse{
+                transition: all 1.4s ease 0s;
+                .accordion-body {
+                    background-color: #000;
+                    border-color: #fff;
+                    display: flex;
+                    flex-direction: row;
+                    
+            
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            
+        
+            button.accordion-button {
+                color: #ffc107;
+                background-color: #3c3930;
+                font-family: var.$font-Elden;
+                text-transform: uppercase;
+            }
+            .accordion-button::after{
+                transition: transform .2s ease-in-out;;
+
+            }
+            button.accordion-button::after:not(.collapsed){
+                background-image: var.$accordion-button-active-icon;
+
+            }
         }
+        
+        
     }
-
-    button.accordion-button {
-        color: #ffc107;
-        background-color: #3c3930;
-        font-family: var.$font-Elden;
-        text-transform: uppercase;
-    }
+    
 }
 
 
-.accordion-item {
-    border: none;
+.collapsed .bi-chevron-down{
+    color: var.$accordion-icon-color;
 }
