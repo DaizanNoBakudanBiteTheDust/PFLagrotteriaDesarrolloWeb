@@ -1,4 +1,4 @@
-@use "./globales/variables" as var;
+@use "./globales/variables"as var;
 
 @media (min-width: var.$tablet) {
 
@@ -131,25 +131,32 @@
 
     /*Jefes */
 
-    section.jefes {
-        .accordion-body {
-            flex-direction: row;
-        }
-    }
-
-    /*Juegos Similares*/
-    section.juegosSimilares {
-        .row {
-            .scrollPagina {
-                display: flex;
-                flex-wrap: nowrap;
-                overflow: hidden;
-                justify-content: space-between;
+   
+        section.jefes {
+            .accordion {
+                .accordion-item {
+                    .accordion-collapse {
+                        .accordion-body {
+                            flex-direction: row;
+                        }
+                    }
+                }
             }
         }
+    
+        /*Juegos Similares*/
+        section.juegosSimilares {
+            .row {
+                .scrollPagina {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    overflow: hidden;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+
+
+        /*Cierra el Media query*/
     }
-
-
-
-    /*Cierra el Media query*/
-}

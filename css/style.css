@@ -536,7 +536,7 @@ section.contacto ul li a:hover i {
     font-size: 0.8rem;
   }
   /*Jefes */
-  section.jefes .accordion-body {
+  section.jefes .accordion .accordion-item .accordion-collapse .accordion-body {
     flex-direction: row;
   }
   /*Juegos Similares*/
