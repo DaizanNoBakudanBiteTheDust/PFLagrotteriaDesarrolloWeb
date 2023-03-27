@@ -365,7 +365,7 @@ section.jefes .accordion .accordion-item .accordion-collapse .accordion-body {
   background-color: #000;
   border-color: #fff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 section.jefes .accordion .accordion-item .accordion-collapse .accordion-body img {
   width: 100%;
@@ -375,6 +375,7 @@ section.jefes .accordion .accordion-item button.accordion-button {
   background-color: #3c3930;
   font-family: "Mantinia";
   text-transform: uppercase;
+  box-shadow: 0px 2px #ffc107;
 }
 section.jefes .accordion .accordion-item .accordion-button::after {
   transition: transform 0.2s ease-in-out;
@@ -382,10 +383,6 @@ section.jefes .accordion .accordion-item .accordion-button::after {
 }
 section.jefes .accordion .accordion-item button.accordion-button::after:not(.collapsed) {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffc107'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-}
-
-.collapsed .bi-chevron-down {
-  color: #fff;
 }
 
 section.juegosSimilares .row .scrollPagina {
@@ -828,15 +825,18 @@ section.contacto ul li a:hover i {
     text-align: center;
   }
   /*Seccion Estrategias Jefes*/
-  section.jefes .accordion-body {
+  section.jefes .accordion .accordion-item {
+    margin-bottom: 2px;
+  }
+  section.jefes .accordion .accordion-item .accordion-collapse .accordion-body {
     flex-direction: row;
   }
-  section.jefes .accordion-body p {
+  section.jefes .accordion .accordion-item .accordion-collapse .accordion-body p {
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 40px;
   }
-  section.jefes .accordion-body p span {
+  section.jefes .accordion .accordion-item .accordion-collapse .accordion-body p span {
     font-size: 2.5rem;
     font-family: "Mantinia";
     color: #bf981b;
